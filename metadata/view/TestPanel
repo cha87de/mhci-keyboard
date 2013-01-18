@@ -1,0 +1,168 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TestPanel",
+        "layout": "vbox"
+    },
+    "id": "ExtBox1-ext-gen2997",
+    "designerId": "552308c9-1aef-4d5c-8ebe-52652eedf736",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyPanel4",
+                "layout": "fit"
+            },
+            "designerId": "26696840-bd43-4233-ab27-141c7859b0ff",
+            "cn": [
+                {
+                    "type": "textareafield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextArea",
+                        "id": "outputarea",
+                        "label": "",
+                        "readOnly": true
+                    },
+                    "designerId": "d6c24a10-e043-4121-90ab-b7faa3644968"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getNextPhrase",
+                "fn": "getNextPhrase",
+                "implHandler": [
+                    "var phrases = [",
+                    "\"ph1\",",
+                    "\"ph2\",",
+                    "\"ph3\",",
+                    "\"ph4\"",
+                    "];",
+                    "",
+                    "var randomIndex = 4;",
+                    "return phrases[randomIndex];"
+                ]
+            },
+            "designerId": "0b97c32f-95f7-4d88-8625-6acd1e56c18e"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setKeyboard",
+                "fn": "setKeyboard",
+                "designer|params": [
+                    "keyboard"
+                ],
+                "implHandler": [
+                    "this.add(keyboard);",
+                    "keyboard.on('wordcomplete', function(word){",
+                    "    this.checkCurrentWord(word);",
+                    "}, this);"
+                ]
+            },
+            "designerId": "e92d7ace-5e78-433a-bbdd-76647c8203f6"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "designerId": "00943c9c-18d5-4fc4-a3ac-d0acddd0c2ec",
+            "masterInstanceId": "ExtBox1-ext-gen1824"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "checkCurrentWord",
+                "fn": "checkCurrentWord",
+                "designer|params": [
+                    "word"
+                ],
+                "implHandler": [
+                    "// ToDo: ist word an aktueller Stelle richtig?",
+                    "// ToDo: abhängig davon rot oder grün einfärben.",
+                    "",
+                    "var phraseWord = this.phrase1 WORT AN STELLE this.currentWord;",
+                    "// Prüfen word == phraseWord",
+                    "",
+                    "// Zähle Buckstaben: vom wort gesamt, falsche buchstaben",
+                    "// this.characterCounter += X;",
+                    "// this.characterErrorCounter += Y;",
+                    "",
+                    "",
+                    "this.currentWord++;",
+                    "if(this.currentWord > \"words in this.phrase1\"){",
+                    "    this.phrase1 = this.phrase2;",
+                    "    this.phrase2 = this.getNextPhrase();",
+                    "    this.currentWord = 0;",
+                    "}",
+                    "    ",
+                    ""
+                ]
+            },
+            "designerId": "a56e66fb-9927-4cfd-999f-1052b7f12079"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "startTest",
+                "fn": "startTest",
+                "implHandler": [
+                    "// hole ZWEI Phrases",
+                    "this.phrase1 = this.getNextPhrase();",
+                    "this.phrase2 = this.getNextPhrase();",
+                    "",
+                    "this.currentWord = 0;",
+                    "",
+                    "// ToDo: Print in outputPanel",
+                    "// this.getItem(\"outputPanel\").setText(this.phrase1);",
+                    "// this.getItem(\"outputPanel\").setText(\"<br/>\");",
+                    "// this.getItem(\"outputPanel\").setText(this.phrase2);",
+                    "",
+                    "this.characterCounter = 0;",
+                    "this.characterErrorCounter = 0;"
+                ]
+            },
+            "designerId": "4c00b7ae-61fe-4ca6-b27f-2b1e1ffb132a"
+        }
+    ]
+}

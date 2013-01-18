@@ -1,0 +1,75 @@
+{
+    "name": "KeyboardPrototype",
+    "settings": {
+        "urlPrefix": "app.html",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "552308c9-1aef-4d5c-8ebe-52652eedf736": {
+            "paths": [
+                "metadata/view/TestPanel",
+                "app/view/override/TestPanel.js",
+                "app/view/TestPanel.js"
+            ],
+            "className": "TestPanel"
+        },
+        "fbe92b2b-f4fa-41e1-aab0-be2896c495ea": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "bf11f67c-ec4d-4cdb-8108-75b78add0969": {
+            "paths": [
+                "metadata/view/KeyboardFittsLaw",
+                "app/view/override/KeyboardFittsLaw.js",
+                "app/view/KeyboardFittsLaw.js"
+            ],
+            "className": "KeyboardFittsLaw"
+        },
+        "acda4388-6190-4797-95cd-db53498e022e": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
+        },
+        "606d8c36-eba2-4141-afed-10222f16890b": {
+            "paths": [
+                "metadata/view/RootPanel",
+                "app/view/override/RootPanel.js",
+                "app/view/RootPanel.js"
+            ],
+            "className": "RootPanel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "606d8c36-eba2-4141-afed-10222f16890b",
+            "552308c9-1aef-4d5c-8ebe-52652eedf736",
+            "bf11f67c-ec4d-4cdb-8108-75b78add0969"
+        ],
+        "store": [],
+        "controller": [
+            "acda4388-6190-4797-95cd-db53498e022e"
+        ],
+        "model": [],
+        "resource": [
+            "fbe92b2b-f4fa-41e1-aab0-be2896c495ea"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

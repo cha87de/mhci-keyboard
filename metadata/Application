@@ -1,0 +1,20 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "KeyboardFittsLaw",
+            "RootPanel"
+        ],
+        "name": "MyApp",
+        "controllers": [
+            "MyController"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1536",
+    "designerId": "application"
+}

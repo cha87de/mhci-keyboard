@@ -1,0 +1,51 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RootPanel",
+        "designer|initialView": true
+    },
+    "id": "ExtBox1-ext-gen6534",
+    "designerId": "606d8c36-eba2-4141-afed-10222f16890b",
+    "cn": [
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyButton21",
+                "itemId": "mybutton21",
+                "text": "MyButton21"
+            },
+            "designerId": "efd1be4e-b99f-4a4b-bbac-31b0e3f4c7f3",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onMybutton21Tap",
+                        "fn": "onMybutton21Tap",
+                        "implHandler": [
+                            "this.hide();",
+                            "TestPanel.show();",
+                            "TestPanel.start();"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "5a224120-e1c3-4007-b43c-eeaebcc3c98f"
+                }
+            ]
+        }
+    ]
+}
