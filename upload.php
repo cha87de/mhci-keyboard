@@ -30,6 +30,7 @@ try {
     );
     $queryStatement = "UPDATE user SET
     testdone = 1,
+    endtime = NOW(),
     
     test11Characters = :test11Characters,
     test11Errors = :test11Errors,
@@ -63,5 +64,5 @@ try {
     );
 }
 
-echo json_decode($result);
+echo json_encode($result);
 ?>
