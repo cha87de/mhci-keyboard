@@ -179,9 +179,37 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     uploadData: function() {
-        Ext.Msg.alert('', 'Great! Finished!', function(){
-            this.setActiveItem(0);
-        }, this)
+
+        Ext.Ajax.request({
+            url: 'upload.php',
+            params: {
+                test11Characters: 5,
+                test11Errors: 2,
+
+                test12Characters: 5,
+                test12Errors: 2,
+
+                test13Characters: 5,
+                test13Errors: 2,
+
+                test21Characters: 5,
+                test21Errors: 2,
+
+                test22Characters: 5,
+                test22Errors: 2,
+
+                test23Characters: 5,
+                test23Errors: 2    
+            },
+            success: function(response){
+                //var text = response.responseText;
+                Ext.Msg.alert('', 'Great! Finished!', function(){
+                    this.setActiveItem(0);
+                }, this)
+            }
+        });
+
+
     }
 
 });

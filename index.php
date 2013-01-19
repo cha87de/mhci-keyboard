@@ -80,7 +80,6 @@
                     $query = $pdo->prepare($queryStatement);
                     $statementSuccessful = $query->execute($params);
                     if(!$statementSuccessful){
-                        var_dump($query->errorInfo());
                         throw new Exception("Error inserting new user into database.");
                     }
                     echo "appState.firstTest = '" . $nextFirsttest . "';";
