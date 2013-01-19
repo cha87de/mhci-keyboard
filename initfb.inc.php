@@ -2,8 +2,8 @@
   require_once('lib/facebook.php');
 
   $config = array(
-    'appId' => '*****',
-    'secret' => '*****',
+    'appId' => '323108537790813',
+    'secret' => '402981d47f7103d8e106884bd5d41c74',
   );
   $facebook = new Facebook($config);
 
