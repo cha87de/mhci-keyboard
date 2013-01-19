@@ -16,27 +16,172 @@
 Ext.define('MyApp.view.RootPanel', {
     extend: 'Ext.Panel',
 
+    requires: [
+        'MyApp.view.StartPanel',
+        'MyApp.view.TestPanel'
+    ],
+
     config: {
-        items: [
-            {
-                xtype: 'button',
-                itemId: 'mybutton21',
-                text: 'MyButton21'
-            }
-        ],
+        ui: '',
+        layout: {
+            animation: 'fade',
+            type: 'card'
+        },
+        scrollable: false,
         listeners: [
             {
-                fn: 'onMybutton21Tap',
-                event: 'tap',
-                delegate: '#mybutton21'
+                fn: 'onPanelShow',
+                event: 'show'
+            }
+        ],
+        items: [
+            {
+                xtype: 'startpanel'
+            },
+            {
+                xtype: 'testpanel'
             }
         ]
     },
 
-    onMybutton21Tap: function(button, e, options) {
-        this.hide();
-        TestPanel.show();
-        TestPanel.start();
+    onPanelShow: function(component, options) {
+        if(facebook.userId == 0){
+            // show Login-Window
+            Ext.Msg.alert('', 'Welcome!<br/>Continue to facebook login?', function(){
+                document.location.href = facebook.loginUrl;
+            }, this);
+        }else{
+
+            if(appState.userknown){
+                // show Introduction-Window
+                Ext.Msg.alert('', 'Sorry, ' + facebook.username + ' you have done this already.', function(){
+                    // show bye-site
+                }, this);    
+            }else{
+                // show Introduction-Window
+                Ext.Msg.alert('', 'Hi ' + facebook.username + '! Thanks for visiting. Let\'s start?', function(){
+                    this.showIntroduction(1);
+                }, this);        
+            }
+        }
+    },
+
+    showIntroduction: function(step) {
+        if(step == 1){
+            Ext.Msg.alert('Introduction', 'Please hold your tablet in landscape with both hands. Use only your thumbs for interacting. Let\'s start?', function(){
+                this.showIntroduction(2);
+            }, this);
+        }else if(step == 2){
+            this.startTest();
+        }
+
+    },
+
+    startTest: function() {
+        this.doStep(0);
+    },
+
+    doStep: function(number) {
+        if(number == 0){
+            // Test 1, Durchlauf 1:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+
+            var keyboard = (appState.firstTest == 'a') ? new MyApp.view.Keyboard() : new MyApp.view.KeyboardFittsLaw();
+            testpanel.setKeyboard(keyboard);
+
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(0.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();
+        }else if(number == 0.5){
+            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
+                this.doStep(1);
+            }, this);
+
+        }else if(number == 1){
+            // Test 1, Durchlauf 2:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(1.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();
+        }else if(number == 1.5){
+            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
+                this.doStep(2);
+            }, this);
+
+        }else if(number == 2){
+            // Test 1, Durchlauf 3:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(2.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();
+        }else if(number == 2.5){
+            Ext.Msg.alert('', 'Thank you! Now try another keyboard layout.', function(){
+                this.doStep(3);
+            }, this);    
+
+        }else if(number == 3){
+            // Test 2, Durchlauf 1:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+
+            var keyboard = (appState.firstTest == 'a') ? new MyApp.view.KeyboardFittsLaw() : new MyApp.view.Keyboard();
+            testpanel.setKeyboard(keyboard);
+
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(3.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();        
+        }else if(number == 3.5){
+            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
+                this.doStep(4);
+            }, this);      
+
+        }else if(number == 4){
+            // Test 2, Durchlauf 2:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(4.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();        
+        }else if(number == 4.5){
+            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
+                this.doStep(5);
+            }, this);      
+
+        }else if(number == 5){
+            // Test 2, Durchlauf 3:
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+            var task = new Ext.util.DelayedTask(function() {
+                this.doStep(5.5);
+            }, this);
+            task.delay(5000);
+            testpanel.startTest();        
+        }else if(number == 5.5){
+            Ext.Msg.alert('', 'Thats all. Now we will upload your usage informations.', function(){
+                this.uploadData()
+            }, this);      
+
+
+        }
+    },
+
+    uploadData: function() {
+        Ext.Msg.alert('', 'Great! Finished!', function(){
+            this.setActiveItem(0);
+        }, this)
     }
 
 });

@@ -15,10 +15,7 @@
 
 Ext.define('MyApp.view.TestPanel', {
     extend: 'Ext.Panel',
-
-    requires: [
-        'MyApp.view.KeyboardFittsLaw'
-    ],
+    alias: 'widget.testpanel',
 
     config: {
         layout: {
@@ -41,7 +38,8 @@ Ext.define('MyApp.view.TestPanel', {
                 ]
             },
             {
-                xtype: 'KeyboardFittsLaw'
+                xtype: 'panel',
+                itemId: 'emptyKeyboard'
             }
         ]
     },
@@ -59,6 +57,8 @@ Ext.define('MyApp.view.TestPanel', {
     },
 
     setKeyboard: function(keyboard) {
+        this.removeAt(this.getItems().length-1);
+
         this.add(keyboard);
         keyboard.on('wordcomplete', function(word){
             this.checkCurrentWord(word);
@@ -68,23 +68,20 @@ Ext.define('MyApp.view.TestPanel', {
     checkCurrentWord: function(word) {
         // ToDo: ist word an aktueller Stelle richtig?
         // ToDo: abhängig davon rot oder grün einfärben.
-
-        var phraseWord = this.phrase1 WORT AN STELLE this.currentWord;
+        var words = this.phrase1.split(" ");
+        var phraseWord = words[this.currentWord];
         // Prüfen word == phraseWord
 
         // Zähle Buckstaben: vom wort gesamt, falsche buchstaben
         // this.characterCounter += X;
         // this.characterErrorCounter += Y;
 
-
         this.currentWord++;
-        if(this.currentWord > "words in this.phrase1"){
+        if(this.currentWord > words.length){
             this.phrase1 = this.phrase2;
             this.phrase2 = this.getNextPhrase();
             this.currentWord = 0;
         }
-
-
     },
 
     startTest: function() {

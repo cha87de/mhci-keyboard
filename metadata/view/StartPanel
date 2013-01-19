@@ -1,0 +1,14 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "StartPanel",
+        "designer|userAlias": "startpanel"
+    },
+    "id": "ExtBox1-ext-gen12408",
+    "designerId": "9bcd34a3-9a16-474f-9396-fd3c98eb90ee"
+}

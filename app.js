@@ -20,12 +20,11 @@ Ext.Loader.setConfig({
 Ext.application({
     views: [
         'KeyboardFittsLaw',
-        'RootPanel'
+        'RootPanel',
+        'StartPanel',
+        'Keyboard'
     ],
     name: 'MyApp',
-    controllers: [
-        'MyController'
-    ],
 
     launch: function() {
 

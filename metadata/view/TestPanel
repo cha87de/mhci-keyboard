@@ -7,6 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "TestPanel",
+        "designer|userAlias": "testpanel",
         "layout": "vbox"
     },
     "id": "ExtBox1-ext-gen2997",
@@ -81,6 +82,8 @@
                     "keyboard"
                 ],
                 "implHandler": [
+                    "this.removeAt(this.getItems().length-1);",
+                    "",
                     "this.add(keyboard);",
                     "keyboard.on('wordcomplete', function(word){",
                     "    this.checkCurrentWord(word);",
@@ -88,16 +91,6 @@
                 ]
             },
             "designerId": "e92d7ace-5e78-433a-bbdd-76647c8203f6"
-        },
-        {
-            "type": "linkedinstance",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "designerId": "00943c9c-18d5-4fc4-a3ac-d0acddd0c2ec",
-            "masterInstanceId": "ExtBox1-ext-gen1824"
         },
         {
             "type": "basicfunction",
@@ -115,23 +108,20 @@
                 "implHandler": [
                     "// ToDo: ist word an aktueller Stelle richtig?",
                     "// ToDo: abhängig davon rot oder grün einfärben.",
-                    "",
-                    "var phraseWord = this.phrase1 WORT AN STELLE this.currentWord;",
+                    "var words = this.phrase1.split(\" \");",
+                    "var phraseWord = words[this.currentWord];",
                     "// Prüfen word == phraseWord",
                     "",
                     "// Zähle Buckstaben: vom wort gesamt, falsche buchstaben",
                     "// this.characterCounter += X;",
                     "// this.characterErrorCounter += Y;",
                     "",
-                    "",
                     "this.currentWord++;",
-                    "if(this.currentWord > \"words in this.phrase1\"){",
+                    "if(this.currentWord > words.length){",
                     "    this.phrase1 = this.phrase2;",
                     "    this.phrase2 = this.getNextPhrase();",
                     "    this.currentWord = 0;",
-                    "}",
-                    "    ",
-                    ""
+                    "}"
                 ]
             },
             "designerId": "a56e66fb-9927-4cfd-999f-1052b7f12079"
@@ -163,6 +153,19 @@
                 ]
             },
             "designerId": "4c00b7ae-61fe-4ca6-b27f-2b1e1ffb132a"
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPanel32",
+                "itemId": "emptyKeyboard"
+            },
+            "designerId": "6817d771-0432-4624-ae90-76d54f2552ec"
         }
     ]
 }

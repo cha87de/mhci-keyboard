@@ -8,14 +8,13 @@
     "userConfig": {
         "container|align": "center",
         "container|pack": "center",
-        "designer|userClassName": "KeyboardFittsLaw",
-        "designer|userAlias": "KeyboardFittsLaw",
+        "designer|userClassName": "Keyboard",
         "margin": 5,
         "ui": "",
         "layout": "hbox"
     },
-    "id": "ExtBox1-ext-gen1824",
-    "designerId": "bf11f67c-ec4d-4cdb-8108-75b78add0969",
+    "id": "ExtBox1-ext-gen27611",
+    "designerId": "709a5344-4d32-481c-82cd-8481e7691696",
     "cn": [
         {
             "type": "panel",
@@ -29,7 +28,7 @@
                 "designer|userClassName": "MyPanel1",
                 "margin": null
             },
-            "designerId": "016d383b-414e-4fb6-b49d-901f40350756",
+            "designerId": "a6b79c28-c1e7-4bba-b551-097f66e8fd2e",
             "cn": [
                 {
                     "type": "panel",
@@ -44,7 +43,7 @@
                         "margin": null,
                         "layout": "hbox"
                     },
-                    "designerId": "99a9e245-12e2-4d40-b2ab-8a4db5e060d7",
+                    "designerId": "65842f6c-273e-41be-bed1-401ce4d8fc06",
                     "cn": [
                         {
                             "type": "button",
@@ -62,7 +61,7 @@
                                 "minWidth": 50,
                                 "text": "1"
                             },
-                            "designerId": "29888fdf-db42-414b-a3c8-2ae025b8759e",
+                            "designerId": "ca9380bd-e99a-49e1-a2da-e11e43299852",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -80,7 +79,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "60118b12-6dfa-4675-8afa-4d3696315020"
+                                    "designerId": "3d757f1f-0028-4986-b555-e41e9e287cee"
                                 }
                             ]
                         },
@@ -99,7 +98,7 @@
                                 "minWidth": 50,
                                 "text": "2"
                             },
-                            "designerId": "9d581d41-e88d-4956-9f66-bf4281cfb699",
+                            "designerId": "2092c978-4236-41d6-aa78-c2dcf218aeb5",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -117,7 +116,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "3f585303-dbf5-4dfc-9fb2-43540cc2cd6c"
+                                    "designerId": "c67dd973-53e8-44d4-bbd0-fa98e93c0e43"
                                 }
                             ]
                         },
@@ -136,7 +135,7 @@
                                 "minWidth": 50,
                                 "text": "3"
                             },
-                            "designerId": "630168a6-e9b8-4b9a-9d6a-c389f5cc3352",
+                            "designerId": "096f8138-c39a-43d3-8d5e-9b8cb4e1eaaf",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -154,7 +153,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "7a7a5189-f455-4dad-bc69-ec76a39c9db0"
+                                    "designerId": "25d273f5-863f-4d92-96a7-11c1e0d76799"
                                 }
                             ]
                         },
@@ -173,7 +172,7 @@
                                 "minWidth": 50,
                                 "text": "4"
                             },
-                            "designerId": "56880ef8-873f-4c3e-9dd3-e22994762b16",
+                            "designerId": "86e4fc94-a81c-458a-a0b7-b20a188f4d27",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -191,7 +190,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "6ae9acd4-c4fe-4e38-958e-b4d09d9bdd1e"
+                                    "designerId": "363d1f0c-37c2-4742-b459-ce74b0940ff2"
                                 }
                             ]
                         },
@@ -210,7 +209,7 @@
                                 "minWidth": 50,
                                 "text": "5"
                             },
-                            "designerId": "2f6ec6eb-2fcc-4fef-b3ef-8b50282c8284",
+                            "designerId": "edc2bacf-15fc-4961-b84f-c29502674fcf",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -228,7 +227,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "6a75e6b4-ec98-4829-a1f6-fdbadd4716aa"
+                                    "designerId": "cae65d96-afb2-400b-bc7e-440892e7404f"
                                 }
                             ]
                         },
@@ -247,7 +246,7 @@
                                 "minWidth": 50,
                                 "text": "6"
                             },
-                            "designerId": "ec5b15d0-e2d0-4467-b0c2-7bf0125b74aa",
+                            "designerId": "f41a9977-dbdf-4bd4-be43-7740e4b2b706",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -265,7 +264,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "09e28834-dd81-4f23-a654-f80fc8e803a6"
+                                    "designerId": "37ac668c-3ecd-4680-9651-1d20358d5fb2"
                                 }
                             ]
                         }
@@ -282,7 +281,7 @@
                         "designer|userClassName": "MyPanel6",
                         "layout": "hbox"
                     },
-                    "designerId": "a81db9a4-aec8-4a3b-9542-59518b92d937",
+                    "designerId": "70e0b0f3-b219-4995-9ca6-32dc84d3558b",
                     "cn": [
                         {
                             "type": "button",
@@ -296,10 +295,10 @@
                                 "itemId": "mybutton6",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "Q"
                             },
-                            "designerId": "7e7da38f-9a64-43f0-98af-ed7916b05378",
+                            "designerId": "151053f8-2488-4491-a480-c2bf0e6d6236",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -317,7 +316,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "54676bf4-7bd8-4a13-ba16-ac906210e752"
+                                    "designerId": "d800b2ab-4c7d-4984-8acd-1e7d0b786d5a"
                                 }
                             ]
                         },
@@ -336,7 +335,7 @@
                                 "minWidth": 50,
                                 "text": "W"
                             },
-                            "designerId": "9228ef4c-54ed-455a-a2e2-412d1732f6c1",
+                            "designerId": "0c69aeb9-1ed3-49ce-b327-1d7a9464f8fb",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -354,7 +353,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "9312623b-4949-4b01-a1e9-e29930d9f513"
+                                    "designerId": "5930c255-f26a-406a-af52-a7e01209065a"
                                 }
                             ]
                         },
@@ -370,10 +369,10 @@
                                 "itemId": "mybutton8",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "E"
                             },
-                            "designerId": "2301ffb1-44f8-4cf7-b6b0-171d51a96a0d",
+                            "designerId": "b5d7848c-52a6-478b-98a7-6772ab213f4e",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -391,7 +390,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "f67a3879-0171-4e78-9d1c-05e5e1175fd3"
+                                    "designerId": "f969d8d9-82d5-40c1-84f7-abd52a41792e"
                                 }
                             ]
                         },
@@ -410,7 +409,7 @@
                                 "minWidth": 50,
                                 "text": "R"
                             },
-                            "designerId": "4366187a-35f2-44d5-9ed5-322f7ba7285f",
+                            "designerId": "f89eca2d-7bd2-4243-a94c-106518917d8d",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -428,7 +427,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "518e2dc1-964d-46f3-9423-b0e2914e0f3e"
+                                    "designerId": "8a42e59b-3cd3-4f6f-8496-3d61a5ba5470"
                                 }
                             ]
                         },
@@ -444,10 +443,10 @@
                                 "itemId": "mybutton10",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "T"
                             },
-                            "designerId": "d7a822bb-768a-4a3f-b172-e2271a75de00",
+                            "designerId": "7f7d9d30-8501-400f-a752-9bfae819e2b4",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -465,7 +464,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "54ed6835-eba0-49d1-a4c0-0a6887ab81ee"
+                                    "designerId": "7053276f-f904-4cff-95b9-05ca8e819b90"
                                 }
                             ]
                         }
@@ -482,7 +481,7 @@
                         "designer|userClassName": "MyPanel7",
                         "layout": "hbox"
                     },
-                    "designerId": "e38278f8-96d7-42ca-a468-d3aa294bd597",
+                    "designerId": "80ab89fc-b2c1-4854-9778-cf03991bee73",
                     "cn": [
                         {
                             "type": "button",
@@ -496,10 +495,10 @@
                                 "itemId": "mybutton11",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "A"
                             },
-                            "designerId": "a809f814-b86e-4fe5-8252-c3a872ea0a1f",
+                            "designerId": "85eae15e-3bc6-4fe8-b8fe-695ac24b86de",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -517,7 +516,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "4d035658-adb6-460a-b530-38be99800afc"
+                                    "designerId": "64709b8b-89c2-49f7-b2c2-e9380b0756e1"
                                 }
                             ]
                         },
@@ -533,10 +532,10 @@
                                 "itemId": "mybutton12",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "S"
                             },
-                            "designerId": "62a30559-baac-47e7-8776-18b791824c5b",
+                            "designerId": "bfc8952f-6a9a-4c96-a185-7ee57c028433",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -554,7 +553,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "85332dc8-135f-48cc-8960-66d2da8b9e0d"
+                                    "designerId": "1ca48b70-a4b8-42ec-a9cc-4da4f6d9fcdb"
                                 }
                             ]
                         },
@@ -573,7 +572,7 @@
                                 "minWidth": 50,
                                 "text": "D"
                             },
-                            "designerId": "81c7c494-aeb1-4efa-bf7c-cde36da7ad0c",
+                            "designerId": "30127212-6116-48a6-938b-c4d9285ec449",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -591,7 +590,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "e70423c9-952e-41ad-87c6-514b2f1fd37a"
+                                    "designerId": "bb30bd84-7ca8-4133-96bb-545a74c1f376"
                                 }
                             ]
                         },
@@ -610,7 +609,7 @@
                                 "minWidth": 50,
                                 "text": "F"
                             },
-                            "designerId": "1ae427de-31ab-4226-bbae-e2b899204327",
+                            "designerId": "a99f5e5e-2021-40b9-bbd5-834da9255b4b",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -628,7 +627,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "2a090d42-125e-4771-ae25-e1319ae8b114"
+                                    "designerId": "e929b4c8-0340-4f5b-99d7-e6b52b663930"
                                 }
                             ]
                         },
@@ -644,10 +643,10 @@
                                 "itemId": "mybutton32",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "G"
                             },
-                            "designerId": "ae82c7ea-b8b8-49d2-9f5f-462c1316e771",
+                            "designerId": "d71e6293-195b-4cdc-924c-d9af5e49212b",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -665,7 +664,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "9a06ca55-e55e-4d53-b441-5d64ae6d1dd6"
+                                    "designerId": "986b4adb-11c4-4a48-9d7a-8105aad8db4a"
                                 }
                             ]
                         }
@@ -682,7 +681,7 @@
                         "designer|userClassName": "MyPanel8",
                         "layout": "hbox"
                     },
-                    "designerId": "3960d0f4-da8b-4ddf-b461-f2b90087382e",
+                    "designerId": "2487e915-a1e3-48e7-a210-ba66cc73bfc0",
                     "cn": [
                         {
                             "type": "button",
@@ -698,7 +697,7 @@
                                 "minWidth": 63,
                                 "text": "sh"
                             },
-                            "designerId": "226392a4-8097-4760-890e-682016769a6c"
+                            "designerId": "ae54e16f-340c-4952-af69-6fe92eb97add"
                         },
                         {
                             "type": "button",
@@ -712,10 +711,10 @@
                                 "itemId": "mybutton16",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "Z"
                             },
-                            "designerId": "3828dd06-9f48-4e64-85ad-36f1efc8cde1",
+                            "designerId": "0bdf04e9-249b-4bbe-890b-6040aeffc241",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -733,7 +732,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "ed4c7e14-814f-4531-8a85-649042430e76"
+                                    "designerId": "32d2eb9a-5db3-4409-9dc7-96c07b4031c8"
                                 }
                             ]
                         },
@@ -749,10 +748,10 @@
                                 "itemId": "mybutton17",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "X"
                             },
-                            "designerId": "a54c1087-894d-4e3b-b3f6-7fb5ddd9dc37",
+                            "designerId": "f2cda855-d44c-4ae7-8880-1982156704a1",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -770,7 +769,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "97acf70b-d7f8-400e-9969-eb5e315939ef"
+                                    "designerId": "c19138d6-5ffb-43bc-a110-3c5b568fc6ee"
                                 }
                             ]
                         },
@@ -789,7 +788,7 @@
                                 "minWidth": 50,
                                 "text": "C"
                             },
-                            "designerId": "823b650c-c06c-47b6-901f-fb3a9c2b72db",
+                            "designerId": "cfe3214d-8ed4-4600-ac2f-9e024a64e99e",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -807,7 +806,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "756798cd-7527-44a0-bd1d-4501024bc74f"
+                                    "designerId": "d4b32bcd-ca60-4244-b7d3-589351875f7c"
                                 }
                             ]
                         },
@@ -823,10 +822,10 @@
                                 "itemId": "mybutton19",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "V"
                             },
-                            "designerId": "ab6d5e1e-e9ec-435f-9059-92d52fb134e7",
+                            "designerId": "7c64d88e-c072-4e23-ba40-aacd750366eb",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -844,7 +843,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "ffa1893e-742b-43ac-b65f-56e93c3bc4ae"
+                                    "designerId": "e596fd53-21b8-4ffb-bc49-8758b18d5f88"
                                 }
                             ]
                         }
@@ -861,7 +860,7 @@
                         "designer|userClassName": "MyPanel9",
                         "layout": "hbox"
                     },
-                    "designerId": "506ab279-5dae-48d9-81ba-e63afd9758da",
+                    "designerId": "efc1ed26-6ff7-4916-8528-b3e1db03561b",
                     "cn": [
                         {
                             "type": "button",
@@ -878,7 +877,7 @@
                                 "minWidth": 320,
                                 "text": ""
                             },
-                            "designerId": "5f3a8acc-251c-4672-ba14-cc33663eb188",
+                            "designerId": "16f2035f-61a9-4800-89b0-6c8dc5d7ac13",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -898,7 +897,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "ca295e72-c69a-4f07-8b59-8744ebd959ff"
+                                    "designerId": "c96c9b1d-2939-4ca2-8010-9e04c03ab655"
                                 }
                             ]
                         }
@@ -917,7 +916,7 @@
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel15"
             },
-            "designerId": "84458ab3-f6d6-4874-b86e-8149fc30f2cf",
+            "designerId": "a6537e38-1393-4a19-8a8c-f42a7f65aa83",
             "cn": [
                 {
                     "type": "textfield",
@@ -935,7 +934,7 @@
                         "name": "outputfield",
                         "readOnly": true
                     },
-                    "designerId": "fed4da3a-6f93-499a-af68-e5e5dd040098"
+                    "designerId": "7d11dc6b-0c1a-4e2b-87d4-bec366adf6e2"
                 }
             ]
         },
@@ -951,7 +950,7 @@
                 "designer|userClassName": "MyPanel2",
                 "margin": null
             },
-            "designerId": "8bd8cad6-a57d-4d46-82fb-c1a6384888a7",
+            "designerId": "2ac097c7-3334-415b-98c0-d322b3725311",
             "cn": [
                 {
                     "type": "panel",
@@ -966,7 +965,7 @@
                         "designer|userClassName": "MyPanel10",
                         "layout": "hbox"
                     },
-                    "designerId": "628a0315-aaff-47a3-a09d-5bb0ebc1828b",
+                    "designerId": "12219fff-a96a-4d0b-9027-20eb2ab25475",
                     "cn": [
                         {
                             "type": "button",
@@ -983,7 +982,7 @@
                                 "minWidth": 50,
                                 "text": "7"
                             },
-                            "designerId": "6e1f3a23-247f-4f4a-b426-a5be8442ed8e"
+                            "designerId": "c76d1896-d6f5-4617-927d-a5223455d023"
                         },
                         {
                             "type": "button",
@@ -1000,7 +999,7 @@
                                 "minWidth": 50,
                                 "text": "8"
                             },
-                            "designerId": "43a417cb-b977-4f0b-9f91-5ee66913cdd6",
+                            "designerId": "4fd005eb-8551-4f59-b536-f62e5a17abf0",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1018,7 +1017,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "0ad9ad0c-0884-4750-8b80-a091228861b3"
+                                    "designerId": "63416e8c-0a77-46ed-bd1c-af770c9772ea"
                                 }
                             ]
                         },
@@ -1037,7 +1036,7 @@
                                 "minWidth": 50,
                                 "text": "9"
                             },
-                            "designerId": "42b4d27d-7b26-43f9-a0b9-a6288b6d5a6d",
+                            "designerId": "77523329-b113-4340-a4a1-a384affe4752",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1055,7 +1054,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "4941de4e-b5dd-4d65-961f-0580ee4c4005"
+                                    "designerId": "2ff44770-33a9-42e8-a533-41613b886d5a"
                                 }
                             ]
                         },
@@ -1074,7 +1073,7 @@
                                 "minWidth": 50,
                                 "text": "0"
                             },
-                            "designerId": "2ed3a223-970b-46f1-b084-bebe401a7dad",
+                            "designerId": "f56ae1b6-6e67-4381-bc46-fdfdb41fd7a6",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1092,7 +1091,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "2f30c910-99bf-41af-8e0e-80cff6945c19"
+                                    "designerId": "46d28555-4d19-4a7e-93bf-e947e3938b42"
                                 }
                             ]
                         },
@@ -1111,7 +1110,7 @@
                                 "minWidth": 63,
                                 "text": "bac"
                             },
-                            "designerId": "2a1100ff-fd77-4dc2-93f3-8ac28c1f92ef",
+                            "designerId": "aa326268-e8ab-4b01-8b0f-d1ff99a9e371",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1129,7 +1128,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "df87217b-7e2d-493c-8d17-f2ff613b5d37"
+                                    "designerId": "f6d621fc-3a5b-4e43-a481-5729334a6401"
                                 }
                             ]
                         }
@@ -1149,7 +1148,7 @@
                         "margin": null,
                         "layout": "hbox"
                     },
-                    "designerId": "92ee237a-1cc5-4961-9c56-6868310d5c8e",
+                    "designerId": "7e4b9852-32ee-4f82-b84a-e9a7cef2a373",
                     "cn": [
                         {
                             "type": "button",
@@ -1163,10 +1162,10 @@
                                 "itemId": "mybutton27",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "Y"
                             },
-                            "designerId": "874b8d99-41f6-40fe-8aa7-a8f3979e6500",
+                            "designerId": "9068507a-84a7-4b89-8153-8b2a36d3d673",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1184,7 +1183,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "5f7bcfac-07c8-4efc-a3af-439069ada926"
+                                    "designerId": "149a6848-7271-43a5-93a0-ced48654e6c4"
                                 }
                             ]
                         },
@@ -1203,7 +1202,7 @@
                                 "minWidth": 50,
                                 "text": "U"
                             },
-                            "designerId": "c4a5a6bc-a464-40a3-8451-20ba64565cad",
+                            "designerId": "7a1bdb0e-fec5-4221-b81f-864f8123d6dc",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1221,7 +1220,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "944ed7c0-a4fb-41ad-ac52-cd140e34a39a"
+                                    "designerId": "ec7fe921-a691-48e8-992b-a9266d805f61"
                                 }
                             ]
                         },
@@ -1237,10 +1236,10 @@
                                 "itemId": "mybutton29",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "I"
                             },
-                            "designerId": "3dcedf5a-7234-47b2-b615-59b95e1721fc",
+                            "designerId": "891433c6-f7d6-4385-8359-a57379f49362",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1258,7 +1257,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "70021b53-9bd6-4377-a844-98e4e6496d2f"
+                                    "designerId": "55ad233c-5920-4988-bc2e-e50449e9d468"
                                 }
                             ]
                         },
@@ -1274,10 +1273,10 @@
                                 "itemId": "mybutton30",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "O"
                             },
-                            "designerId": "244a664d-1c48-4ca8-baac-ffea01066428",
+                            "designerId": "8e32d5b4-3e2a-4915-9c92-edfbfa5235e3",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1295,7 +1294,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "af442192-c803-4798-8c4c-7db0a11d5dde"
+                                    "designerId": "3d07737f-73f3-409e-9382-93337ee53d20"
                                 }
                             ]
                         },
@@ -1311,10 +1310,10 @@
                                 "itemId": "mybutton31",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "P"
                             },
-                            "designerId": "48861dba-dce4-4d65-81f5-030a43c9d3f0",
+                            "designerId": "d3bb4b3f-1c08-4ad5-8140-5c3f0720ab23",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1332,7 +1331,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "a74cf9f0-081c-4bef-bdde-ef309d89a9ca"
+                                    "designerId": "0832d213-0b42-4651-9f3c-2d7025631502"
                                 }
                             ]
                         }
@@ -1351,7 +1350,7 @@
                         "designer|userClassName": "MyPanel12",
                         "layout": "hbox"
                     },
-                    "designerId": "c211a429-feab-42e6-858e-b5080d6597a7",
+                    "designerId": "a262a846-7952-4f2b-8b28-fea719de0679",
                     "cn": [
                         {
                             "type": "button",
@@ -1365,10 +1364,10 @@
                                 "itemId": "mybutton33",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "H"
                             },
-                            "designerId": "fe1d4376-05db-4b35-ad3f-48bc0ea9baec",
+                            "designerId": "0c7273b7-db1f-4e5a-863e-edf735bef275",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1386,7 +1385,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "74a17949-da3b-4bfb-8efb-65aa3fb05cac"
+                                    "designerId": "d2eb730f-e068-4cd5-ab58-9e1e3e4e104a"
                                 }
                             ]
                         },
@@ -1402,10 +1401,10 @@
                                 "itemId": "mybutton34",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "J"
                             },
-                            "designerId": "dd5ea1dd-3a48-40c5-8ae4-6aa570da61b6",
+                            "designerId": "ad4aaeb8-966b-4763-bcbd-e9995308ddf3",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1423,7 +1422,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "698cb13f-d377-4fc8-95f9-36beedb6884f"
+                                    "designerId": "f69ca825-867f-4243-9569-24e3913a3b2a"
                                 }
                             ]
                         },
@@ -1439,10 +1438,10 @@
                                 "itemId": "mybutton35",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "K"
                             },
-                            "designerId": "9eb79422-f55b-4330-a5be-d864cef04c2e",
+                            "designerId": "2c11ac22-29e7-4359-8042-feb424bf689e",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1460,7 +1459,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "1092ca8a-7a65-43ae-ae46-5772a9952f2e"
+                                    "designerId": "ca198c72-1c0b-461b-ab5a-ea0e28abf1a0"
                                 }
                             ]
                         },
@@ -1479,7 +1478,7 @@
                                 "minWidth": 50,
                                 "text": "L"
                             },
-                            "designerId": "f73b138d-9ea8-416d-8c48-63e9b64fea45",
+                            "designerId": "4ce847f4-9211-4775-8b96-99753849962b",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1497,7 +1496,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "07876b35-9949-4d8c-9e87-c86f5214d83a"
+                                    "designerId": "e69460f2-1f2c-4b47-8f80-d2a7883ce3f3"
                                 }
                             ]
                         }
@@ -1516,7 +1515,7 @@
                         "designer|userClassName": "MyPanel13",
                         "layout": "hbox"
                     },
-                    "designerId": "7ae344d2-b0b5-4d09-bc1a-df18aaedde59",
+                    "designerId": "299198b1-bb37-48fa-ba51-fac36fe39f98",
                     "cn": [
                         {
                             "type": "button",
@@ -1530,10 +1529,10 @@
                                 "itemId": "mybutton37",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 50,
                                 "text": "B"
                             },
-                            "designerId": "ed3cc585-dc6f-4d8e-84f8-f6b4045b46d6",
+                            "designerId": "fe4f6eca-c81f-4474-9d1e-a87efa43a260",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1551,7 +1550,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "a715c550-6042-417a-b301-0fa9801d6edc"
+                                    "designerId": "509b542b-3bf1-4207-a31e-60046accdfb2"
                                 }
                             ]
                         },
@@ -1567,10 +1566,10 @@
                                 "itemId": "mybutton38",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "N"
                             },
-                            "designerId": "5ebec0ae-553f-4fdc-8e8a-38cd1bb5f294",
+                            "designerId": "2121ca38-e5ba-494e-ad83-bfe55c318360",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1588,7 +1587,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "f1e3d158-bb01-461e-9f78-5ef0bb9de972"
+                                    "designerId": "41e08483-225c-4d99-8d76-6353d351a2ae"
                                 }
                             ]
                         },
@@ -1607,7 +1606,7 @@
                                 "minWidth": 50,
                                 "text": "M"
                             },
-                            "designerId": "2a3ea204-6b45-498d-ac37-bc38945fd006",
+                            "designerId": "d95e562c-f941-44d9-8eb8-bca813621651",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1625,7 +1624,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "885ef0fa-98e8-4039-a63d-08abeda1bf15"
+                                    "designerId": "18a98926-7158-44ef-8ac7-7b46c19d330e"
                                 }
                             ]
                         },
@@ -1641,10 +1640,10 @@
                                 "itemId": "mybutton40",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "sh"
                             },
-                            "designerId": "4f2803fb-700f-43cb-a386-551085bd1ba1",
+                            "designerId": "aed97707-2ca8-4a67-9a82-7fb2f2fa6ddc",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1661,7 +1660,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "e7da12b1-dd7a-4433-9786-6b60f9c76495"
+                                    "designerId": "6ff2f7ba-59d5-414c-994d-df039cd221a1"
                                 }
                             ]
                         }
@@ -1680,7 +1679,7 @@
                         "designer|userClassName": "MyPanel14",
                         "layout": "hbox"
                     },
-                    "designerId": "76482b99-3ba7-4994-ba2f-9ddb270f21e0",
+                    "designerId": "4e23bcc7-c08f-4d6e-b088-45ebd96b5251",
                     "cn": [
                         {
                             "type": "button",
@@ -1697,7 +1696,7 @@
                                 "minWidth": 300,
                                 "text": ""
                             },
-                            "designerId": "035c8469-1fe1-4d58-a1a0-3a9048bc4d90",
+                            "designerId": "6989f8bf-6d22-4b12-96f2-d5888e9159e3",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1717,7 +1716,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "f3a9eba3-8ca8-4133-96ba-40aae8b11190"
+                                    "designerId": "730a5cca-1acb-440c-808d-9d82ef60bf0f"
                                 }
                             ]
                         }

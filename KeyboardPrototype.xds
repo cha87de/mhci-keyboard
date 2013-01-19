@@ -37,14 +37,6 @@
             ],
             "className": "KeyboardFittsLaw"
         },
-        "acda4388-6190-4797-95cd-db53498e022e": {
-            "paths": [
-                "metadata/controller/MyController",
-                "app/controller/override/MyController.js",
-                "app/controller/MyController.js"
-            ],
-            "className": "MyController"
-        },
         "606d8c36-eba2-4141-afed-10222f16890b": {
             "paths": [
                 "metadata/view/RootPanel",
@@ -52,18 +44,34 @@
                 "app/view/RootPanel.js"
             ],
             "className": "RootPanel"
+        },
+        "9bcd34a3-9a16-474f-9396-fd3c98eb90ee": {
+            "paths": [
+                "metadata/view/StartPanel",
+                "app/view/override/StartPanel.js",
+                "app/view/StartPanel.js"
+            ],
+            "className": "StartPanel"
+        },
+        "709a5344-4d32-481c-82cd-8481e7691696": {
+            "paths": [
+                "metadata/view/Keyboard",
+                "app/view/override/Keyboard.js",
+                "app/view/Keyboard.js"
+            ],
+            "className": "Keyboard"
         }
     },
     "viewOrderMap": {
         "view": [
             "606d8c36-eba2-4141-afed-10222f16890b",
+            "9bcd34a3-9a16-474f-9396-fd3c98eb90ee",
             "552308c9-1aef-4d5c-8ebe-52652eedf736",
-            "bf11f67c-ec4d-4cdb-8108-75b78add0969"
+            "bf11f67c-ec4d-4cdb-8108-75b78add0969",
+            "709a5344-4d32-481c-82cd-8481e7691696"
         ],
         "store": [],
-        "controller": [
-            "acda4388-6190-4797-95cd-db53498e022e"
-        ],
+        "controller": [],
         "model": [],
         "resource": [
             "fbe92b2b-f4fa-41e1-aab0-be2896c495ea"

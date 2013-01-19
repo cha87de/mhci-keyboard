@@ -8,12 +8,11 @@
     "userConfig": {
         "views": [
             "KeyboardFittsLaw",
-            "RootPanel"
+            "RootPanel",
+            "StartPanel",
+            "Keyboard"
         ],
-        "name": "MyApp",
-        "controllers": [
-            "MyController"
-        ]
+        "name": "MyApp"
     },
     "id": "ExtBox1-ext-gen1536",
     "designerId": "application"
