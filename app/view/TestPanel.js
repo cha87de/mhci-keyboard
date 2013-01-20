@@ -35,6 +35,7 @@ Ext.define('MyApp.view.TestPanel', {
                         xtype: 'textareafield',
                         id: 'outputPanel',
                         itemId: 'outputPanel',
+                        style: 'text-align:center',
                         label: '',
                         readOnly: true
                     }
