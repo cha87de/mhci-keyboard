@@ -6,8 +6,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>KeyboardPrototype</title>
-    <script src="http://extjs.cachefly.net/touch/sencha-touch-2.0.1.1/sencha-touch-all.js"></script>
-    <link rel="stylesheet" href="http://extjs.cachefly.net/touch/sencha-touch-2.0.1.1/resources/css/sencha-touch.css">
+    <script src="/lib/ext/sencha-touch-2.0.1.1/sencha-touch-all.js"></script>
+    <link rel="stylesheet" href="/lib/ext/sencha-touch-2.0.1.1/resources/css/sencha-touch.css">
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
         if (!Ext.browser.is.WebKit) {
