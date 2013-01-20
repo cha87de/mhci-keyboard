@@ -9,12 +9,14 @@
         "container|align": "center",
         "container|pack": "center",
         "designer|userClassName": "Keyboard",
+        "id": "keyboard",
+        "itemId": null,
         "margin": 5,
         "ui": "",
         "layout": "hbox"
     },
-    "id": "ExtBox1-ext-gen27611",
-    "designerId": "709a5344-4d32-481c-82cd-8481e7691696",
+    "id": "ExtBox1-ext-gen2440",
+    "designerId": "dc13bcc8-e414-444f-a744-18751df63aeb",
     "cn": [
         {
             "type": "panel",
@@ -28,7 +30,7 @@
                 "designer|userClassName": "MyPanel1",
                 "margin": null
             },
-            "designerId": "a6b79c28-c1e7-4bba-b551-097f66e8fd2e",
+            "designerId": "b0caf494-da24-41e1-843e-2a7ae8a96052",
             "cn": [
                 {
                     "type": "panel",
@@ -43,7 +45,7 @@
                         "margin": null,
                         "layout": "hbox"
                     },
-                    "designerId": "65842f6c-273e-41be-bed1-401ce4d8fc06",
+                    "designerId": "3b819b53-e2a9-4020-a4c0-770e35f51bbe",
                     "cn": [
                         {
                             "type": "button",
@@ -61,7 +63,7 @@
                                 "minWidth": 50,
                                 "text": "1"
                             },
-                            "designerId": "ca9380bd-e99a-49e1-a2da-e11e43299852",
+                            "designerId": "102107b8-3404-4ee5-8092-c977088e11c9",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -79,7 +81,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "3d757f1f-0028-4986-b555-e41e9e287cee"
+                                    "designerId": "92b97c6d-09fd-456d-82a5-52ae83195808"
                                 }
                             ]
                         },
@@ -98,7 +100,7 @@
                                 "minWidth": 50,
                                 "text": "2"
                             },
-                            "designerId": "2092c978-4236-41d6-aa78-c2dcf218aeb5",
+                            "designerId": "c04fe250-8a41-4cf9-9982-d8b90a079b03",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -116,7 +118,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "c67dd973-53e8-44d4-bbd0-fa98e93c0e43"
+                                    "designerId": "3b04ba12-aa69-481f-a231-9ae9ebcea148"
                                 }
                             ]
                         },
@@ -135,7 +137,7 @@
                                 "minWidth": 50,
                                 "text": "3"
                             },
-                            "designerId": "096f8138-c39a-43d3-8d5e-9b8cb4e1eaaf",
+                            "designerId": "f0afb913-108f-4303-a066-6dcf5bc227b3",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -153,7 +155,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "25d273f5-863f-4d92-96a7-11c1e0d76799"
+                                    "designerId": "cfb0db2c-f109-42c8-be67-e4e620bcf57c"
                                 }
                             ]
                         },
@@ -172,7 +174,7 @@
                                 "minWidth": 50,
                                 "text": "4"
                             },
-                            "designerId": "86e4fc94-a81c-458a-a0b7-b20a188f4d27",
+                            "designerId": "1c108638-3474-45d4-a8f3-fe238056ff79",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -190,7 +192,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "363d1f0c-37c2-4742-b459-ce74b0940ff2"
+                                    "designerId": "fd72a03b-c8b7-4639-8321-a5627e5e391f"
                                 }
                             ]
                         },
@@ -209,7 +211,7 @@
                                 "minWidth": 50,
                                 "text": "5"
                             },
-                            "designerId": "edc2bacf-15fc-4961-b84f-c29502674fcf",
+                            "designerId": "da5612e2-d3d4-40c4-8ab2-4e157a9dbbb2",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -227,7 +229,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "cae65d96-afb2-400b-bc7e-440892e7404f"
+                                    "designerId": "ddfbf903-8179-45b2-9b60-94be6a5ace5c"
                                 }
                             ]
                         },
@@ -246,7 +248,7 @@
                                 "minWidth": 50,
                                 "text": "6"
                             },
-                            "designerId": "f41a9977-dbdf-4bd4-be43-7740e4b2b706",
+                            "designerId": "b98285fd-670c-46c6-9f9c-8636925ee669",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -264,7 +266,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "37ac668c-3ecd-4680-9651-1d20358d5fb2"
+                                    "designerId": "15cacd77-9bc4-4c92-864f-d2562c008a29"
                                 }
                             ]
                         }
@@ -279,9 +281,11 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel6",
+                        "id": "qwertPanel",
+                        "itemId": null,
                         "layout": "hbox"
                     },
-                    "designerId": "70e0b0f3-b219-4995-9ca6-32dc84d3558b",
+                    "designerId": "e94d5c97-c581-4fb6-873c-e5558d8d86b8",
                     "cn": [
                         {
                             "type": "button",
@@ -292,33 +296,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton6",
-                                "itemId": "mybutton6",
+                                "itemId": "keyboardQ",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "Q"
+                                "text": "q"
                             },
-                            "designerId": "151053f8-2488-4491-a480-c2bf0e6d6236",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton6Tap",
-                                        "fn": "onMybutton6Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"Q\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "d800b2ab-4c7d-4984-8acd-1e7d0b786d5a"
-                                }
-                            ]
+                            "designerId": "35a23772-6c14-4d14-a753-6b86f685ed6c"
                         },
                         {
                             "type": "button",
@@ -329,33 +313,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton7",
-                                "itemId": "mybutton7",
+                                "itemId": "keyboardW",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "W"
+                                "text": "w"
                             },
-                            "designerId": "0c69aeb9-1ed3-49ce-b327-1d7a9464f8fb",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton7Tap",
-                                        "fn": "onMybutton7Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"W\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "5930c255-f26a-406a-af52-a7e01209065a"
-                                }
-                            ]
+                            "designerId": "36c44f65-7060-4424-8387-e7ad8c725adf"
                         },
                         {
                             "type": "button",
@@ -366,33 +330,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton8",
-                                "itemId": "mybutton8",
+                                "itemId": "keyboardE",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "E"
+                                "text": "e"
                             },
-                            "designerId": "b5d7848c-52a6-478b-98a7-6772ab213f4e",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton8Tap",
-                                        "fn": "onMybutton8Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"E\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "f969d8d9-82d5-40c1-84f7-abd52a41792e"
-                                }
-                            ]
+                            "designerId": "2dc30c78-4386-4d5a-831c-b76885206823"
                         },
                         {
                             "type": "button",
@@ -403,33 +347,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton9",
-                                "itemId": "mybutton9",
+                                "itemId": "keyboardR",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "R"
+                                "text": "r"
                             },
-                            "designerId": "f89eca2d-7bd2-4243-a94c-106518917d8d",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton9Tap",
-                                        "fn": "onMybutton9Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"R\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "8a42e59b-3cd3-4f6f-8496-3d61a5ba5470"
-                                }
-                            ]
+                            "designerId": "a52628e0-a4e8-4819-8a1d-3fa04d15a10d"
                         },
                         {
                             "type": "button",
@@ -440,33 +364,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton10",
-                                "itemId": "mybutton10",
+                                "itemId": "keyboardT",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "T"
+                                "text": "t"
                             },
-                            "designerId": "7f7d9d30-8501-400f-a752-9bfae819e2b4",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton10Tap",
-                                        "fn": "onMybutton10Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"T\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "7053276f-f904-4cff-95b9-05ca8e819b90"
-                                }
-                            ]
+                            "designerId": "a33a29de-f177-4783-8d31-c38fae299324"
                         }
                     ]
                 },
@@ -479,9 +383,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel7",
+                        "id": "asdfgPanel",
                         "layout": "hbox"
                     },
-                    "designerId": "80ab89fc-b2c1-4854-9778-cf03991bee73",
+                    "designerId": "06ca7bf7-ee0f-4fec-a46a-4bfc2293181d",
                     "cn": [
                         {
                             "type": "button",
@@ -492,33 +397,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton11",
-                                "itemId": "mybutton11",
+                                "itemId": "keyboardA",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "A"
+                                "text": "a"
                             },
-                            "designerId": "85eae15e-3bc6-4fe8-b8fe-695ac24b86de",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton11Tap",
-                                        "fn": "onMybutton11Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"A\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "64709b8b-89c2-49f7-b2c2-e9380b0756e1"
-                                }
-                            ]
+                            "designerId": "c6c1f4dd-2cc6-4e72-9e24-ba392212108f"
                         },
                         {
                             "type": "button",
@@ -529,33 +414,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton12",
-                                "itemId": "mybutton12",
+                                "itemId": "keyboardS",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "S"
+                                "text": "s"
                             },
-                            "designerId": "bfc8952f-6a9a-4c96-a185-7ee57c028433",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton12Tap",
-                                        "fn": "onMybutton12Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"S\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "1ca48b70-a4b8-42ec-a9cc-4da4f6d9fcdb"
-                                }
-                            ]
+                            "designerId": "562eaeea-c1a8-4b1e-bcc4-5c456d96b260"
                         },
                         {
                             "type": "button",
@@ -566,33 +431,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton13",
-                                "itemId": "mybutton13",
+                                "itemId": "keyboardD",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "D"
+                                "text": "d"
                             },
-                            "designerId": "30127212-6116-48a6-938b-c4d9285ec449",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton13Tap",
-                                        "fn": "onMybutton13Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"D\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "bb30bd84-7ca8-4133-96bb-545a74c1f376"
-                                }
-                            ]
+                            "designerId": "5b051179-e1df-4208-b406-9628615ea758"
                         },
                         {
                             "type": "button",
@@ -603,33 +448,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton14",
-                                "itemId": "mybutton14",
+                                "itemId": "keyboardF",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "F"
+                                "text": "f"
                             },
-                            "designerId": "a99f5e5e-2021-40b9-bbd5-834da9255b4b",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton14Tap",
-                                        "fn": "onMybutton14Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"F\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "e929b4c8-0340-4f5b-99d7-e6b52b663930"
-                                }
-                            ]
+                            "designerId": "ec9cb294-ad47-4280-979b-aeb8d3060eb9"
                         },
                         {
                             "type": "button",
@@ -640,33 +465,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton32",
-                                "itemId": "mybutton32",
+                                "itemId": "keyboardG",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "G"
+                                "text": "g"
                             },
-                            "designerId": "d71e6293-195b-4cdc-924c-d9af5e49212b",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton32Tap",
-                                        "fn": "onMybutton32Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"G\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "986b4adb-11c4-4a48-9d7a-8105aad8db4a"
-                                }
-                            ]
+                            "designerId": "4fa76dc6-0268-4cc0-9703-928b7cb657dd"
                         }
                     ]
                 },
@@ -679,9 +484,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel8",
+                        "id": "shzxcvPanel",
                         "layout": "hbox"
                     },
-                    "designerId": "2487e915-a1e3-48e7-a210-ba66cc73bfc0",
+                    "designerId": "a1dea575-f3a6-4623-8919-f82d937d4d4d",
                     "cn": [
                         {
                             "type": "button",
@@ -692,12 +498,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton15",
+                                "itemId": "keyboardShiftLeft",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 50,
                                 "text": "sh"
                             },
-                            "designerId": "ae54e16f-340c-4952-af69-6fe92eb97add"
+                            "designerId": "13d829b3-ca52-4095-91a1-0b3d3bd70e4f"
                         },
                         {
                             "type": "button",
@@ -708,33 +515,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton16",
-                                "itemId": "mybutton16",
+                                "itemId": "keyboardZ",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "Z"
+                                "text": "z"
                             },
-                            "designerId": "0bdf04e9-249b-4bbe-890b-6040aeffc241",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton16Tap",
-                                        "fn": "onMybutton16Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"Z\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "32d2eb9a-5db3-4409-9dc7-96c07b4031c8"
-                                }
-                            ]
+                            "designerId": "45f51a98-16b2-4c6d-9878-4236e3925032"
                         },
                         {
                             "type": "button",
@@ -745,33 +532,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton17",
-                                "itemId": "mybutton17",
+                                "itemId": "keyboardX",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "X"
+                                "text": "x"
                             },
-                            "designerId": "f2cda855-d44c-4ae7-8880-1982156704a1",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton17Tap",
-                                        "fn": "onMybutton17Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"X\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "c19138d6-5ffb-43bc-a110-3c5b568fc6ee"
-                                }
-                            ]
+                            "designerId": "469d2216-291b-4869-aae8-040d8d1dc434"
                         },
                         {
                             "type": "button",
@@ -782,33 +549,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton18",
-                                "itemId": "mybutton18",
+                                "itemId": "keyboardC",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "C"
+                                "text": "c"
                             },
-                            "designerId": "cfe3214d-8ed4-4600-ac2f-9e024a64e99e",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton18Tap",
-                                        "fn": "onMybutton18Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"C\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "d4b32bcd-ca60-4244-b7d3-589351875f7c"
-                                }
-                            ]
+                            "designerId": "d2d8fe79-5720-42a4-95f5-9b7d2ee9f0f9"
                         },
                         {
                             "type": "button",
@@ -819,33 +566,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton19",
-                                "itemId": "mybutton19",
+                                "itemId": "keyboardV",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "V"
+                                "text": "v"
                             },
-                            "designerId": "7c64d88e-c072-4e23-ba40-aacd750366eb",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton19Tap",
-                                        "fn": "onMybutton19Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"V\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "e596fd53-21b8-4ffb-bc49-8758b18d5f88"
-                                }
-                            ]
+                            "designerId": "4558a9da-951d-4f90-8dee-4aa156311fd4"
                         }
                     ]
                 },
@@ -860,7 +587,7 @@
                         "designer|userClassName": "MyPanel9",
                         "layout": "hbox"
                     },
-                    "designerId": "efc1ed26-6ff7-4916-8528-b3e1db03561b",
+                    "designerId": "cfe811d7-3053-40e6-967c-03d6b1509a02",
                     "cn": [
                         {
                             "type": "button",
@@ -871,35 +598,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton21",
-                                "itemId": "mybutton21",
+                                "itemId": "keyboardSpaceLeft",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 320,
                                 "text": ""
                             },
-                            "designerId": "16f2035f-61a9-4800-89b0-6c8dc5d7ac13",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton21Tap",
-                                        "fn": "onMybutton21Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "var outputarea = Ext.getCmp(\"outputarea\");",
-                                            "outputarea.setValue(outputarea.getValue() + \" \" + outputfield.getValue());",
-                                            "outputfield.setValue(\"\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "c96c9b1d-2939-4ca2-8010-9e04c03ab655"
-                                }
-                            ]
+                            "designerId": "fcdd5e9e-5408-4ddc-9204-5c859fdaecf5"
                         }
                     ]
                 }
@@ -916,7 +621,7 @@
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel15"
             },
-            "designerId": "a6537e38-1393-4a19-8a8c-f42a7f65aa83",
+            "designerId": "597913f7-aa97-4a8d-8258-e8abbf1b4c00",
             "cn": [
                 {
                     "type": "textfield",
@@ -929,12 +634,12 @@
                         "designer|userClassName": "MyTextField",
                         "docked": null,
                         "id": "outputfield",
-                        "itemId": "",
+                        "itemId": null,
                         "label": "",
                         "name": "outputfield",
                         "readOnly": true
                     },
-                    "designerId": "7d11dc6b-0c1a-4e2b-87d4-bec366adf6e2"
+                    "designerId": "d366c6e4-5189-4edf-b2d5-cbb6ac125a72"
                 }
             ]
         },
@@ -950,7 +655,7 @@
                 "designer|userClassName": "MyPanel2",
                 "margin": null
             },
-            "designerId": "2ac097c7-3334-415b-98c0-d322b3725311",
+            "designerId": "19ac04fa-5ddb-42a7-9e41-2904cec1d964",
             "cn": [
                 {
                     "type": "panel",
@@ -965,7 +670,7 @@
                         "designer|userClassName": "MyPanel10",
                         "layout": "hbox"
                     },
-                    "designerId": "12219fff-a96a-4d0b-9027-20eb2ab25475",
+                    "designerId": "cc6d50bd-710a-4c5a-bfae-7e06389da925",
                     "cn": [
                         {
                             "type": "button",
@@ -982,7 +687,7 @@
                                 "minWidth": 50,
                                 "text": "7"
                             },
-                            "designerId": "c76d1896-d6f5-4617-927d-a5223455d023"
+                            "designerId": "9e04a8c8-3459-4d27-ae48-cbbb1827682b"
                         },
                         {
                             "type": "button",
@@ -999,7 +704,7 @@
                                 "minWidth": 50,
                                 "text": "8"
                             },
-                            "designerId": "4fd005eb-8551-4f59-b536-f62e5a17abf0",
+                            "designerId": "bf359d0a-7dac-4fed-8b77-b4471ac73837",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1017,7 +722,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "63416e8c-0a77-46ed-bd1c-af770c9772ea"
+                                    "designerId": "234d428d-df18-4eb5-9dd7-8ff78ca7fe8e"
                                 }
                             ]
                         },
@@ -1036,7 +741,7 @@
                                 "minWidth": 50,
                                 "text": "9"
                             },
-                            "designerId": "77523329-b113-4340-a4a1-a384affe4752",
+                            "designerId": "654be3ff-750f-49db-a7a1-4f9df29e5948",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1054,7 +759,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "2ff44770-33a9-42e8-a533-41613b886d5a"
+                                    "designerId": "2ec0064d-dab1-4979-93b2-a0a37fc71604"
                                 }
                             ]
                         },
@@ -1073,7 +778,7 @@
                                 "minWidth": 50,
                                 "text": "0"
                             },
-                            "designerId": "f56ae1b6-6e67-4381-bc46-fdfdb41fd7a6",
+                            "designerId": "5fe8e2ee-6140-4879-bad0-678ceff02772",
                             "cn": [
                                 {
                                     "type": "basiceventbinding",
@@ -1091,7 +796,7 @@
                                         ],
                                         "name": "tap"
                                     },
-                                    "designerId": "46d28555-4d19-4a7e-93bf-e947e3938b42"
+                                    "designerId": "5b5c11da-1b44-4f29-94cc-6e858ecc7d46"
                                 }
                             ]
                         },
@@ -1104,33 +809,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton26",
-                                "itemId": "mybutton26",
+                                "itemId": "keyboardBackSpace",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 63,
                                 "text": "bac"
                             },
-                            "designerId": "aa326268-e8ab-4b01-8b0f-d1ff99a9e371",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton26Tap",
-                                        "fn": "onMybutton26Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "f6d621fc-3a5b-4e43-a481-5729334a6401"
-                                }
-                            ]
+                            "designerId": "6bb2548b-ea16-4b42-9f4a-dd9e13576ed2"
                         }
                     ]
                 },
@@ -1145,10 +830,11 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel11",
+                        "id": "yuiopPanel",
                         "margin": null,
                         "layout": "hbox"
                     },
-                    "designerId": "7e4b9852-32ee-4f82-b84a-e9a7cef2a373",
+                    "designerId": "cb462581-30c8-4021-9e7a-bb169b445a51",
                     "cn": [
                         {
                             "type": "button",
@@ -1159,33 +845,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton27",
-                                "itemId": "mybutton27",
+                                "itemId": "keyboardY",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "Y"
+                                "text": "y"
                             },
-                            "designerId": "9068507a-84a7-4b89-8153-8b2a36d3d673",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton27Tap",
-                                        "fn": "onMybutton27Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"Y\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "149a6848-7271-43a5-93a0-ced48654e6c4"
-                                }
-                            ]
+                            "designerId": "86453a94-49a8-426c-9633-62265050714e"
                         },
                         {
                             "type": "button",
@@ -1196,33 +862,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton28",
-                                "itemId": "mybutton28",
+                                "itemId": "keyboardU",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "U"
+                                "text": "u"
                             },
-                            "designerId": "7a1bdb0e-fec5-4221-b81f-864f8123d6dc",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton28Tap",
-                                        "fn": "onMybutton28Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"U\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "ec7fe921-a691-48e8-992b-a9266d805f61"
-                                }
-                            ]
+                            "designerId": "0e019fd4-5c5b-4b92-aaa5-593f44b75f91"
                         },
                         {
                             "type": "button",
@@ -1233,33 +879,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton29",
-                                "itemId": "mybutton29",
+                                "itemId": "keyboardI",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "I"
+                                "text": "i"
                             },
-                            "designerId": "891433c6-f7d6-4385-8359-a57379f49362",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton29Tap",
-                                        "fn": "onMybutton29Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"I\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "55ad233c-5920-4988-bc2e-e50449e9d468"
-                                }
-                            ]
+                            "designerId": "2010faaa-5dc6-4eb1-b0bf-65175eeb94e5"
                         },
                         {
                             "type": "button",
@@ -1270,33 +896,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton30",
-                                "itemId": "mybutton30",
+                                "itemId": "keyboardO",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "O"
+                                "text": "o"
                             },
-                            "designerId": "8e32d5b4-3e2a-4915-9c92-edfbfa5235e3",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton30Tap",
-                                        "fn": "onMybutton30Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"O\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "3d07737f-73f3-409e-9382-93337ee53d20"
-                                }
-                            ]
+                            "designerId": "88d00d1c-34f5-41c1-9dad-eaea56232f03"
                         },
                         {
                             "type": "button",
@@ -1307,33 +913,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton31",
-                                "itemId": "mybutton31",
+                                "itemId": "keyboardP",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "P"
+                                "text": "p"
                             },
-                            "designerId": "d3bb4b3f-1c08-4ad5-8140-5c3f0720ab23",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton31Tap",
-                                        "fn": "onMybutton31Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"P\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "0832d213-0b42-4651-9f3c-2d7025631502"
-                                }
-                            ]
+                            "designerId": "f3a22398-1da8-48f0-9d86-f8fbe0d33b9f"
                         }
                     ]
                 },
@@ -1348,9 +934,10 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel12",
+                        "id": "hjklPanel",
                         "layout": "hbox"
                     },
-                    "designerId": "a262a846-7952-4f2b-8b28-fea719de0679",
+                    "designerId": "ce0a7ee9-33df-421e-b347-70227210d617",
                     "cn": [
                         {
                             "type": "button",
@@ -1361,33 +948,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton33",
-                                "itemId": "mybutton33",
+                                "itemId": "keyboardH",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "H"
+                                "text": "h"
                             },
-                            "designerId": "0c7273b7-db1f-4e5a-863e-edf735bef275",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton33Tap",
-                                        "fn": "onMybutton33Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"H\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "d2eb730f-e068-4cd5-ab58-9e1e3e4e104a"
-                                }
-                            ]
+                            "designerId": "767af46a-9ef8-421b-8da6-c5fac8733ed6"
                         },
                         {
                             "type": "button",
@@ -1398,33 +965,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton34",
-                                "itemId": "mybutton34",
+                                "itemId": "keyboardJ",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "J"
+                                "text": "j"
                             },
-                            "designerId": "ad4aaeb8-966b-4763-bcbd-e9995308ddf3",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton34Tap",
-                                        "fn": "onMybutton34Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"J\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "f69ca825-867f-4243-9569-24e3913a3b2a"
-                                }
-                            ]
+                            "designerId": "970e3894-a03c-4050-b2d7-bd3479ae109d"
                         },
                         {
                             "type": "button",
@@ -1435,33 +982,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton35",
-                                "itemId": "mybutton35",
+                                "itemId": "keyboardK",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "K"
+                                "text": "k"
                             },
-                            "designerId": "2c11ac22-29e7-4359-8042-feb424bf689e",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton35Tap",
-                                        "fn": "onMybutton35Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"K\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "ca198c72-1c0b-461b-ab5a-ea0e28abf1a0"
-                                }
-                            ]
+                            "designerId": "b391c034-fcd5-4446-8923-ca11972157d3"
                         },
                         {
                             "type": "button",
@@ -1472,33 +999,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton36",
-                                "itemId": "mybutton36",
+                                "itemId": "keyboardL",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "L"
+                                "text": "l"
                             },
-                            "designerId": "4ce847f4-9211-4775-8b96-99753849962b",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton36Tap",
-                                        "fn": "onMybutton36Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"L\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "e69460f2-1f2c-4b47-8f80-d2a7883ce3f3"
-                                }
-                            ]
+                            "designerId": "c3f07098-b0ab-45dc-aecf-73337dbb614d"
                         }
                     ]
                 },
@@ -1513,9 +1020,10 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel13",
+                        "id": "bnmshPanel",
                         "layout": "hbox"
                     },
-                    "designerId": "299198b1-bb37-48fa-ba51-fac36fe39f98",
+                    "designerId": "f7972975-e41f-4069-9e8d-f3ecfca327a1",
                     "cn": [
                         {
                             "type": "button",
@@ -1526,33 +1034,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton37",
-                                "itemId": "mybutton37",
+                                "itemId": "keyboardB",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "B"
+                                "text": "b"
                             },
-                            "designerId": "fe4f6eca-c81f-4474-9d1e-a87efa43a260",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton37Tap",
-                                        "fn": "onMybutton37Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"B\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "509b542b-3bf1-4207-a31e-60046accdfb2"
-                                }
-                            ]
+                            "designerId": "bbe4b188-2017-4c81-9ba3-fda47b82433d"
                         },
                         {
                             "type": "button",
@@ -1563,33 +1051,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton38",
-                                "itemId": "mybutton38",
+                                "itemId": "keyboardN",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "N"
+                                "text": "n"
                             },
-                            "designerId": "2121ca38-e5ba-494e-ad83-bfe55c318360",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton38Tap",
-                                        "fn": "onMybutton38Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"N\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "41e08483-225c-4d99-8d76-6353d351a2ae"
-                                }
-                            ]
+                            "designerId": "b08458fd-bf0a-465f-a746-78533f52c0cd"
                         },
                         {
                             "type": "button",
@@ -1600,33 +1068,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton39",
-                                "itemId": "mybutton39",
+                                "itemId": "keyboardM",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
-                                "text": "M"
+                                "text": "m"
                             },
-                            "designerId": "d95e562c-f941-44d9-8eb8-bca813621651",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton39Tap",
-                                        "fn": "onMybutton39Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "outputfield.setValue(outputfield.getValue()+\"M\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "18a98926-7158-44ef-8ac7-7b46c19d330e"
-                                }
-                            ]
+                            "designerId": "934464b7-8bf2-4ee7-9f1c-894096f6877c"
                         },
                         {
                             "type": "button",
@@ -1637,32 +1085,13 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton40",
-                                "itemId": "mybutton40",
+                                "itemId": "keyboardShiftRight",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 50,
                                 "text": "sh"
                             },
-                            "designerId": "aed97707-2ca8-4a67-9a82-7fb2f2fa6ddc",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton40Tap",
-                                        "fn": "onMybutton40Tap",
-                                        "implHandler": [
-                                            ""
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "6ff2f7ba-59d5-414c-994d-df039cd221a1"
-                                }
-                            ]
+                            "designerId": "6cd169c9-4641-4de5-bee7-4c3824e0c8a8"
                         }
                     ]
                 },
@@ -1679,7 +1108,7 @@
                         "designer|userClassName": "MyPanel14",
                         "layout": "hbox"
                     },
-                    "designerId": "4e23bcc7-c08f-4d6e-b088-45ebd96b5251",
+                    "designerId": "e3465f39-4c4f-4aef-a989-8e53afd83725",
                     "cn": [
                         {
                             "type": "button",
@@ -1690,39 +1119,34 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton41",
-                                "itemId": "mybutton41",
+                                "itemId": "keyboardSpaceRight",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 300,
                                 "text": ""
                             },
-                            "designerId": "6989f8bf-6d22-4b12-96f2-d5888e9159e3",
-                            "cn": [
-                                {
-                                    "type": "basiceventbinding",
-                                    "reference": {
-                                        "name": "listeners",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "onMybutton41Tap",
-                                        "fn": "onMybutton41Tap",
-                                        "implHandler": [
-                                            "var outputfield = Ext.getCmp(\"outputfield\");",
-                                            "var outputarea = Ext.getCmp(\"outputarea\");",
-                                            "outputarea.setValue(outputarea.getValue() + \" \" + outputfield.getValue());",
-                                            "outputfield.setValue(\"\");"
-                                        ],
-                                        "name": "tap"
-                                    },
-                                    "designerId": "730a5cca-1acb-440c-808d-9d82ef60bf0f"
-                                }
-                            ]
+                            "designerId": "a635a8a3-751b-47d7-a07f-c3e7945d58dc"
                         }
                     ]
                 }
             ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onKeyboardFittsLawActivate",
+                "fn": "onKeyboardFittsLawActivate",
+                "implHandler": [
+                    "this.shift = false;"
+                ],
+                "name": "activate"
+            },
+            "designerId": "953f2941-641c-4b9b-ac6c-ce1e3e5f3509"
         }
     ]
 }

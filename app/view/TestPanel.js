@@ -18,6 +18,7 @@ Ext.define('MyApp.view.TestPanel', {
     alias: 'widget.testpanel',
 
     config: {
+        id: 'testPanel',
         layout: {
             type: 'vbox'
         },
@@ -32,7 +33,9 @@ Ext.define('MyApp.view.TestPanel', {
                 items: [
                     {
                         xtype: 'textareafield',
+                        id: 'outputPanel',
                         itemId: 'outputPanel',
+                        style: 'text-align:center',
                         label: '',
                         readOnly: true
                     }
@@ -171,20 +174,6 @@ Ext.define('MyApp.view.TestPanel', {
         // Prüfen word == phraseWord
 
 
-        if(word == phraseWord){
-
-            if(word.length == phraseWord.length){
-                for(var i=word.length; i<word.length; i++){
-                    if(word.charAt(i) == phraseWord.charAt(i)){
-                        this.characterCounter += 1;
-                    }else{
-                        this.characterErrorCounter += 1;
-                    }
-                }
-            }
-
-        }
-
         // Zähle Buckstaben: vom wort gesamt, falsche buchstaben
         // this.characterCounter += X;
         // this.characterErrorCounter += Y;
@@ -194,6 +183,9 @@ Ext.define('MyApp.view.TestPanel', {
             this.phrase1 = this.phrase2;
             this.phrase2 = this.getNextPhrase();
             this.currentWord = 0;
+
+            var output = this.phrase1 + "<br/><br/>" + this.phrase2;
+            this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
         }
     },
 
@@ -203,13 +195,39 @@ Ext.define('MyApp.view.TestPanel', {
         this.phrase2 = this.getNextPhrase();
 
         this.currentWord = 0;
+        this.currentChar = 0;
         // ToDo: Print in outputPanel
 
-        var output = this.phrase1 + "<br/>" + this.phrase2;
+        var output = this.phrase1 + "<br/><br/>" + this.phrase2;
         this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
 
         this.characterCounter = 0;
         this.characterErrorCounter = 0;
+    },
+
+    checkCurrentChar: function(char) {
+        // ToDo: ist char an aktueller Stelle richtig?
+        // ToDo: abhängig davon rot oder grün einfärben.
+        var charPhrase = this.phrase1.split("");
+        var phraseChar = charPhrase[this.currentChar];
+        // Prüfen word == phraseWord
+
+
+
+        if(phraseChar == char){
+            this.characterCounter += 1;
+        }else{
+            this.characterCounter += 1;
+            this.characterErrorCounter += 1;
+        }
+
+
+        // Zähle Buckstaben: vom wort gesamt, falsche buchstaben
+        // this.characterCounter += X;
+        // this.characterErrorCounter += Y;
+
+        this.currentChar++;
+
     }
 
 });

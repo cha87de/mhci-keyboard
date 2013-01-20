@@ -8,6 +8,7 @@
     "userConfig": {
         "designer|userClassName": "TestPanel",
         "designer|userAlias": "testpanel",
+        "id": "testPanel",
         "layout": "vbox"
     },
     "id": "ExtBox1-ext-gen2997",
@@ -37,8 +38,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyTextArea",
-                        "id": null,
+                        "id": "outputPanel",
                         "itemId": "outputPanel",
+                        "style": "text-align:center",
+                        "inputCls": null,
                         "label": "",
                         "readOnly": true
                     },
@@ -212,20 +215,6 @@
                     "// Prüfen word == phraseWord",
                     "",
                     "",
-                    "if(word == phraseWord){",
-                    "",
-                    "    if(word.length == phraseWord.length){",
-                    "        for(var i=word.length; i<word.length; i++){",
-                    "            if(word.charAt(i) == phraseWord.charAt(i)){",
-                    "                this.characterCounter += 1;",
-                    "            }else{",
-                    "                this.characterErrorCounter += 1;",
-                    "            }",
-                    "        }",
-                    "    }",
-                    "",
-                    "}",
-                    "",
                     "// Zähle Buckstaben: vom wort gesamt, falsche buchstaben",
                     "// this.characterCounter += X;",
                     "// this.characterErrorCounter += Y;",
@@ -235,6 +224,9 @@
                     "    this.phrase1 = this.phrase2;",
                     "    this.phrase2 = this.getNextPhrase();",
                     "    this.currentWord = 0;",
+                    "",
+                    "    var output = this.phrase1 + \"<br/><br/>\" + this.phrase2;",
+                    "    this.getComponent(\"textPanel\").getComponent(\"outputPanel\").setHtml(output);",
                     "}"
                 ]
             },
@@ -256,9 +248,10 @@
                     "this.phrase2 = this.getNextPhrase();",
                     "",
                     "this.currentWord = 0;",
+                    "this.currentChar = 0;",
                     "// ToDo: Print in outputPanel",
                     "",
-                    "var output = this.phrase1 + \"<br/>\" + this.phrase2;",
+                    "var output = this.phrase1 + \"<br/><br/>\" + this.phrase2;",
                     "this.getComponent(\"textPanel\").getComponent(\"outputPanel\").setHtml(output);",
                     "",
                     "this.characterCounter = 0;",
@@ -279,6 +272,46 @@
                 "itemId": "emptyKeyboard"
             },
             "designerId": "6817d771-0432-4624-ae90-76d54f2552ec"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "checkCurrentChar",
+                "fn": "checkCurrentChar",
+                "designer|params": [
+                    "char"
+                ],
+                "implHandler": [
+                    "// ToDo: ist char an aktueller Stelle richtig?",
+                    "// ToDo: abhängig davon rot oder grün einfärben.",
+                    "var charPhrase = this.phrase1.split(\"\");",
+                    "var phraseChar = charPhrase[this.currentChar];",
+                    "// Prüfen word == phraseWord",
+                    "",
+                    "",
+                    "",
+                    "if(phraseChar == char){",
+                    "    this.characterCounter += 1;",
+                    "}else{",
+                    "    this.characterCounter += 1;",
+                    "    this.characterErrorCounter += 1;",
+                    "}",
+                    "",
+                    "",
+                    "// Zähle Buckstaben: vom wort gesamt, falsche buchstaben",
+                    "// this.characterCounter += X;",
+                    "// this.characterErrorCounter += Y;",
+                    "",
+                    "this.currentChar++;",
+                    ""
+                ]
+            },
+            "designerId": "17f8941d-38c1-40d0-b0a9-d3ee5006cbd3"
         }
     ]
 }
