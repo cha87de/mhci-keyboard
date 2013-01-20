@@ -28,7 +28,12 @@ Ext.define('MyApp.controller.MyController', {
 
         if(button.getItemId().search(/keyboardShift.+/)!=-1){
 
-            var keyboard = Ext.getCmp("keyboardFittsLaw");
+            //var keyboard = Ext.getCmp("keyboardFittsLaw");
+            var keyboard = MyApp.view.KeyboardFittsLaw();
+
+            if(keyboard == null || typeof keyboard == 'undefined'){
+                keyboard = Ext.getCmp("keyboard");
+            }
 
             var qwert = Ext.getCmp("qwertPanel").items.items;
             var asdfg = Ext.getCmp("asdfgPanel").items.items;
@@ -83,10 +88,28 @@ Ext.define('MyApp.controller.MyController', {
         }
         else if(button.getItemId().search(/keyboardSpace.+/)!=-1){
             //todo handle space
-            //var outputfield = Ext.getCmp("outputfield");
-            //var outputarea = Ext.getCmp("outputarea");
-            //outputarea.setValue(outputarea.getValue() + " " + outputfield.getValue());
-            //outputfield.setValue("");
+
+            //leere schreibfeld
+            var outputfield = Ext.getCmp("outputfield");
+            var word = outputfield.getValue();
+            outputfield.setValue("");
+
+            var testPanel = Ext.getCmp('testPanel');
+            testPanel.checkCurrentChar(" ");
+
+            console.info('errorcounter: '+testPanel.characterErrorCounter);
+            console.info('charcounter:' +testPanel.characterCounter);
+            console.info('wordcounter:' +testPanel.currentWord);
+
+
+            testPanel.checkCurrentWord(word);
+
+
+            //setzte neuen satz
+            //var outputPanel = .getComponent("textPanel").getComponent("outputPanel");
+
+            //console.info(outputPanel);
+
         }
         else if(button.getItemId().search(/keyboard.+/)!=-1){
 
@@ -98,6 +121,14 @@ Ext.define('MyApp.controller.MyController', {
 
             var text = Ext.getCmp("outputfield").getValue() + typedChar;
             Ext.getCmp("outputfield").setValue(text);
+
+            var testPanel = Ext.getCmp('testPanel');
+            testPanel.checkCurrentChar(typedChar);
+
+            console.info('errorcounter: '+testPanel.characterErrorCounter);
+            console.info('charcounter:' +testPanel.characterCounter);
+            console.info('wordcounter:' +testPanel.currentWord);
+
 
 
         }

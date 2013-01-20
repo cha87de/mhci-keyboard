@@ -53,14 +53,6 @@
             ],
             "className": "StartPanel"
         },
-        "709a5344-4d32-481c-82cd-8481e7691696": {
-            "paths": [
-                "metadata/view/Keyboard",
-                "app/view/override/Keyboard.js",
-                "app/view/Keyboard.js"
-            ],
-            "className": "Keyboard"
-        },
         "555623e0-1cb4-49c7-b790-f11344120cce": {
             "paths": [
                 "metadata/controller/MyController",
@@ -68,6 +60,14 @@
                 "app/controller/MyController.js"
             ],
             "className": "MyController"
+        },
+        "dc13bcc8-e414-444f-a744-18751df63aeb": {
+            "paths": [
+                "metadata/view/Keyboard",
+                "app/view/override/Keyboard.js",
+                "app/view/Keyboard.js"
+            ],
+            "className": "Keyboard"
         }
     },
     "viewOrderMap": {
@@ -76,7 +76,7 @@
             "9bcd34a3-9a16-474f-9396-fd3c98eb90ee",
             "552308c9-1aef-4d5c-8ebe-52652eedf736",
             "bf11f67c-ec4d-4cdb-8108-75b78add0969",
-            "709a5344-4d32-481c-82cd-8481e7691696"
+            "dc13bcc8-e414-444f-a744-18751df63aeb"
         ],
         "store": [],
         "controller": [

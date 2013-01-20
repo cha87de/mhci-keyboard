@@ -599,7 +599,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "designer|userClassName": "MyButton21",
-                                "itemId": "keybaordSpaceLeft",
+                                "itemId": "keyboardSpaceLeft",
                                 "margin": 2,
                                 "minHeight": 39,
                                 "minWidth": 320,

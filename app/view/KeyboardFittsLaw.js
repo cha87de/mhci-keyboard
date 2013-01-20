@@ -243,7 +243,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'keybaordSpaceLeft',
+                                itemId: 'keyboardSpaceLeft',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 320,

@@ -93,7 +93,7 @@ Ext.define('MyApp.view.RootPanel', {
             var task = new Ext.util.DelayedTask(function() {
                 this.doStep(0.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();
         }else if(number == 0.5){
             Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
