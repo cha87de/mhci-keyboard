@@ -95,43 +95,43 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton6',
+                                itemId: 'keyboardQ',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'Q'
+                                text: 'q'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton7',
+                                itemId: 'keyboardW',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'W'
+                                text: 'w'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton8',
+                                itemId: 'keyboardE',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'E'
+                                text: 'e'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton9',
+                                itemId: 'keyboardR',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'R'
+                                text: 'r'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton10',
+                                itemId: 'keyboardT',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'T'
+                                text: 't'
                             }
                         ]
                     },
@@ -143,43 +143,43 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton11',
+                                itemId: 'keyboardA',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'A'
+                                text: 'a'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton12',
+                                itemId: 'keyboardS',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'S'
+                                text: 's'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton13',
+                                itemId: 'keyboardD',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'D'
+                                text: 'd'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton14',
+                                itemId: 'keyboardF',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'F'
+                                text: 'f'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton32',
+                                itemId: 'keyboardG',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'G'
+                                text: 'g'
                             }
                         ]
                     },
@@ -191,6 +191,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
+                                itemId: 'keyboardShiftLeft',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
@@ -198,35 +199,35 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton16',
+                                itemId: 'keyboardZ',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'Z'
+                                text: 'z'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton17',
+                                itemId: 'keyboardX',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'X'
+                                text: 'x'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton18',
+                                itemId: 'keyboardC',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'C'
+                                text: 'c'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton19',
+                                itemId: 'keyboardV',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'V'
+                                text: 'v'
                             }
                         ]
                     },
@@ -238,7 +239,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton21',
+                                itemId: 'keybaordSpaceLeft',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 320,
@@ -255,7 +256,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     {
                         xtype: 'textfield',
                         id: 'outputfield',
-                        itemId: '',
+                        itemId: 'outputfield',
                         label: '',
                         name: 'outputfield',
                         readOnly: true
@@ -308,7 +309,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton26',
+                                itemId: 'keyboardBackSpace',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
@@ -326,43 +327,43 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton27',
+                                itemId: 'keyboardY',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'Y'
+                                text: 'y'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton28',
+                                itemId: 'keyboardU',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'U'
+                                text: 'u'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton29',
+                                itemId: 'keyboardI',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'I'
+                                text: 'i'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton30',
+                                itemId: 'keyboardO',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'O'
+                                text: 'o'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton31',
+                                itemId: 'keyboardP',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'P'
+                                text: 'p'
                             }
                         ]
                     },
@@ -376,35 +377,35 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton33',
+                                itemId: 'keyboardH',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'H'
+                                text: 'h'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton34',
+                                itemId: 'keyboardJ',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'J'
+                                text: 'j'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton35',
+                                itemId: 'keyboardK',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'K'
+                                text: 'k'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton36',
+                                itemId: 'keyboardL',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'L'
+                                text: 'l'
                             }
                         ]
                     },
@@ -418,31 +419,31 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton37',
+                                itemId: 'keyboardB',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 35,
-                                text: 'B'
+                                text: 'b'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton38',
+                                itemId: 'keyboardN',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
-                                text: 'N'
+                                text: 'n'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton39',
+                                itemId: 'keyboardM',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 50,
-                                text: 'M'
+                                text: 'm'
                             },
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton40',
+                                itemId: 'keyboardShiftRight',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 63,
@@ -460,7 +461,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         items: [
                             {
                                 xtype: 'button',
-                                itemId: 'mybutton41',
+                                itemId: 'keyboardSpaceRight',
                                 margin: 2,
                                 minHeight: 39,
                                 minWidth: 300,
@@ -503,81 +504,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                 delegate: '#mybutton5'
             },
             {
-                fn: 'onMybutton6Tap',
-                event: 'tap',
-                delegate: '#mybutton6'
-            },
-            {
-                fn: 'onMybutton7Tap',
-                event: 'tap',
-                delegate: '#mybutton7'
-            },
-            {
-                fn: 'onMybutton8Tap',
-                event: 'tap',
-                delegate: '#mybutton8'
-            },
-            {
-                fn: 'onMybutton9Tap',
-                event: 'tap',
-                delegate: '#mybutton9'
-            },
-            {
-                fn: 'onMybutton10Tap',
-                event: 'tap',
-                delegate: '#mybutton10'
-            },
-            {
-                fn: 'onMybutton11Tap',
-                event: 'tap',
-                delegate: '#mybutton11'
-            },
-            {
-                fn: 'onMybutton12Tap',
-                event: 'tap',
-                delegate: '#mybutton12'
-            },
-            {
-                fn: 'onMybutton13Tap',
-                event: 'tap',
-                delegate: '#mybutton13'
-            },
-            {
-                fn: 'onMybutton14Tap',
-                event: 'tap',
-                delegate: '#mybutton14'
-            },
-            {
-                fn: 'onMybutton32Tap',
-                event: 'tap',
-                delegate: '#mybutton32'
-            },
-            {
-                fn: 'onMybutton16Tap',
-                event: 'tap',
-                delegate: '#mybutton16'
-            },
-            {
-                fn: 'onMybutton17Tap',
-                event: 'tap',
-                delegate: '#mybutton17'
-            },
-            {
-                fn: 'onMybutton18Tap',
-                event: 'tap',
-                delegate: '#mybutton18'
-            },
-            {
-                fn: 'onMybutton19Tap',
-                event: 'tap',
-                delegate: '#mybutton19'
-            },
-            {
-                fn: 'onMybutton21Tap',
-                event: 'tap',
-                delegate: '#mybutton21'
-            },
-            {
                 fn: 'onMybutton23Tap',
                 event: 'tap',
                 delegate: '#mybutton23'
@@ -591,81 +517,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                 fn: 'onMybutton25Tap',
                 event: 'tap',
                 delegate: '#mybutton25'
-            },
-            {
-                fn: 'onMybutton26Tap',
-                event: 'tap',
-                delegate: '#mybutton26'
-            },
-            {
-                fn: 'onMybutton27Tap',
-                event: 'tap',
-                delegate: '#mybutton27'
-            },
-            {
-                fn: 'onMybutton28Tap',
-                event: 'tap',
-                delegate: '#mybutton28'
-            },
-            {
-                fn: 'onMybutton29Tap',
-                event: 'tap',
-                delegate: '#mybutton29'
-            },
-            {
-                fn: 'onMybutton30Tap',
-                event: 'tap',
-                delegate: '#mybutton30'
-            },
-            {
-                fn: 'onMybutton31Tap',
-                event: 'tap',
-                delegate: '#mybutton31'
-            },
-            {
-                fn: 'onMybutton33Tap',
-                event: 'tap',
-                delegate: '#mybutton33'
-            },
-            {
-                fn: 'onMybutton34Tap',
-                event: 'tap',
-                delegate: '#mybutton34'
-            },
-            {
-                fn: 'onMybutton35Tap',
-                event: 'tap',
-                delegate: '#mybutton35'
-            },
-            {
-                fn: 'onMybutton36Tap',
-                event: 'tap',
-                delegate: '#mybutton36'
-            },
-            {
-                fn: 'onMybutton37Tap',
-                event: 'tap',
-                delegate: '#mybutton37'
-            },
-            {
-                fn: 'onMybutton38Tap',
-                event: 'tap',
-                delegate: '#mybutton38'
-            },
-            {
-                fn: 'onMybutton39Tap',
-                event: 'tap',
-                delegate: '#mybutton39'
-            },
-            {
-                fn: 'onMybutton40Tap',
-                event: 'tap',
-                delegate: '#mybutton40'
-            },
-            {
-                fn: 'onMybutton41Tap',
-                event: 'tap',
-                delegate: '#mybutton41'
             }
         ]
     },
@@ -700,83 +551,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
         outputfield.setValue(outputfield.getValue()+"6");
     },
 
-    onMybutton6Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"Q");
-    },
-
-    onMybutton7Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"W");
-    },
-
-    onMybutton8Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"E");
-    },
-
-    onMybutton9Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"R");
-    },
-
-    onMybutton10Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"T");
-    },
-
-    onMybutton11Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"A");
-    },
-
-    onMybutton12Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"S");
-    },
-
-    onMybutton13Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"D");
-    },
-
-    onMybutton14Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"F");
-    },
-
-    onMybutton32Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"G");
-    },
-
-    onMybutton16Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"Z");
-    },
-
-    onMybutton17Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"X");
-    },
-
-    onMybutton18Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"C");
-    },
-
-    onMybutton19Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"V");
-    },
-
-    onMybutton21Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        var outputarea = Ext.getCmp("outputarea");
-        outputarea.setValue(outputarea.getValue() + " " + outputfield.getValue());
-        outputfield.setValue("");
-    },
-
     onMybutton23Tap: function(button, e, options) {
         var outputfield = Ext.getCmp("outputfield");
         outputfield.setValue(outputfield.getValue()+"8");
@@ -790,82 +564,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
     onMybutton25Tap: function(button, e, options) {
         var outputfield = Ext.getCmp("outputfield");
         outputfield.setValue(outputfield.getValue()+"0");
-    },
-
-    onMybutton26Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));
-    },
-
-    onMybutton27Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"Y");
-    },
-
-    onMybutton28Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"U");
-    },
-
-    onMybutton29Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"I");
-    },
-
-    onMybutton30Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"O");
-    },
-
-    onMybutton31Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"P");
-    },
-
-    onMybutton33Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"H");
-    },
-
-    onMybutton34Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"J");
-    },
-
-    onMybutton35Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"K");
-    },
-
-    onMybutton36Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"L");
-    },
-
-    onMybutton37Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"B");
-    },
-
-    onMybutton38Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"N");
-    },
-
-    onMybutton39Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        outputfield.setValue(outputfield.getValue()+"M");
-    },
-
-    onMybutton40Tap: function(button, e, options) {
-
-    },
-
-    onMybutton41Tap: function(button, e, options) {
-        var outputfield = Ext.getCmp("outputfield");
-        var outputarea = Ext.getCmp("outputarea");
-        outputarea.setValue(outputarea.getValue() + " " + outputfield.getValue());
-        outputfield.setValue("");
     }
 
 });

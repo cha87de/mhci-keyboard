@@ -12,7 +12,10 @@
             "StartPanel",
             "Keyboard"
         ],
-        "name": "MyApp"
+        "name": "MyApp",
+        "controllers": [
+            "MyController"
+        ]
     },
     "id": "ExtBox1-ext-gen1536",
     "designerId": "application"

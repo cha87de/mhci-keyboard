@@ -25,6 +25,9 @@ Ext.application({
         'Keyboard'
     ],
     name: 'MyApp',
+    controllers: [
+        'MyController'
+    ],
 
     launch: function() {
 

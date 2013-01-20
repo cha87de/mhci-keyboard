@@ -1,0 +1,59 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyController"
+    },
+    "id": "ExtBox1-ext-gen17101",
+    "designerId": "555623e0-1cb4-49c7-b790-f11344120cce",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonTap",
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "",
+                    "if(button.getItemId().search(/keyboardShift.+/)!=-1){",
+                    "     ",
+                    "    //todo handle shift",
+                    "    ",
+                    "    ",
+                    "}else if(button.getItemId().search(/keyboardBackSpace/)!=-1){",
+                    "    ",
+                    "    //todo handle backspace",
+                    "//var outputfield = Ext.getCmp(\"outputfield\");",
+                    "///outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));",
+                    "}",
+                    "else if(button.getItemId().search(/keyboardSpace.+/)!=-1){",
+                    "    //todo handle space",
+                    "    //var outputfield = Ext.getCmp(\"outputfield\");",
+                    "    //var outputarea = Ext.getCmp(\"outputarea\");",
+                    "    //outputarea.setValue(outputarea.getValue() + \" \" + outputfield.getValue());",
+                    "    //outputfield.setValue(\"\");",
+                    "}",
+                    "else if(button.getItemId().search(/keyboard.+/)!=-1){",
+                    "     ",
+                    "    //todo schreibe in das outputfield den text des buttons",
+                    "    //überprüfe ob schift gedrückt oder nicht",
+                    "    ",
+                    "}",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "button"
+            },
+            "designerId": "bf00e339-fd98-4bdb-bab9-88fcc7e441b5"
+        }
+    ]
+}

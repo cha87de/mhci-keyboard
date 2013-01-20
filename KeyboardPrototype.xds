@@ -3,7 +3,7 @@
     "settings": {
         "urlPrefix": "app.html",
         "spacesToIndent": 4,
-        "exportPath": "",
+        "exportPath": "C:/Users/Daniel/Documents/NetBeansProjects/RSUData/lib/mhci-keyboard",
         "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,
@@ -60,6 +60,14 @@
                 "app/view/Keyboard.js"
             ],
             "className": "Keyboard"
+        },
+        "555623e0-1cb4-49c7-b790-f11344120cce": {
+            "paths": [
+                "metadata/controller/MyController",
+                "app/controller/override/MyController.js",
+                "app/controller/MyController.js"
+            ],
+            "className": "MyController"
         }
     },
     "viewOrderMap": {
@@ -71,7 +79,9 @@
             "709a5344-4d32-481c-82cd-8481e7691696"
         ],
         "store": [],
-        "controller": [],
+        "controller": [
+            "555623e0-1cb4-49c7-b790-f11344120cce"
+        ],
         "model": [],
         "resource": [
             "fbe92b2b-f4fa-41e1-aab0-be2896c495ea"
