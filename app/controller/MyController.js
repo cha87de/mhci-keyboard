@@ -28,14 +28,58 @@ Ext.define('MyApp.controller.MyController', {
 
         if(button.getItemId().search(/keyboardShift.+/)!=-1){
 
-            //todo handle shift
+            var keyboard = Ext.getCmp("keyboardFittsLaw");
+
+            var qwert = Ext.getCmp("qwertPanel").items.items;
+            var asdfg = Ext.getCmp("asdfgPanel").items.items;
+            var shzxcv = Ext.getCmp("shzxcvPanel").items.items;
+            var yuiop = Ext.getCmp("yuiopPanel").items.items;
+            var hjkl = Ext.getCmp("hjklPanel").items.items;
+            var bnmsh = Ext.getCmp("bnmshPanel").items.items;
+
+            if(keyboard.shift){
+                keyboard.shift = false;
+
+                for(var i = 0;i<qwert.length;i++){
+                    qwert[i].setText(qwert[i].getText().toLowerCase());
+                    asdfg[i].setText(asdfg[i].getText().toLowerCase());
+                    shzxcv[i].setText(shzxcv[i].getText().toLowerCase());
+                    yuiop[i].setText(yuiop[i].getText().toLowerCase());
+                }
+
+                for(var i = 0;i<hjkl.length;i++){
+                    hjkl[i].setText(hjkl[i].getText().toLowerCase());
+                    bnmsh[i].setText(bnmsh[i].getText().toLowerCase());
+
+                }
+
+            }else{
+                keyboard.shift = true;
+
+
+                for(var i = 0;i<qwert.length;i++){
+                    qwert[i].setText(qwert[i].getText().toUpperCase());
+                    asdfg[i].setText(asdfg[i].getText().toUpperCase());
+                    shzxcv[i].setText(shzxcv[i].getText().toUpperCase());
+                    yuiop[i].setText(yuiop[i].getText().toUpperCase());
+                }
+
+                for(var i = 0;i<hjkl.length;i++){
+                    hjkl[i].setText(hjkl[i].getText().toUpperCase());
+                    bnmsh[i].setText(bnmsh[i].getText().toUpperCase());
+
+                }
+
+            }
+
+
 
 
         }else if(button.getItemId().search(/keyboardBackSpace/)!=-1){
 
             //todo handle backspace
-            //var outputfield = Ext.getCmp("outputfield");
-            ///outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));
+            var outputfield = Ext.getCmp("outputfield");
+            outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));
         }
         else if(button.getItemId().search(/keyboardSpace.+/)!=-1){
             //todo handle space
@@ -48,6 +92,13 @@ Ext.define('MyApp.controller.MyController', {
 
             //todo schreibe in das outputfield den text des buttons
             //überprüfe ob schift gedrückt oder nicht
+
+            //var outputfield = Ext.getCmp("outputfield");
+            var typedChar = button.getText();
+
+            var text = Ext.getCmp("outputfield").getValue() + typedChar;
+            Ext.getCmp("outputfield").setValue(text);
+
 
         }
 
