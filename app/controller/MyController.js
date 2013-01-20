@@ -25,6 +25,8 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     onButtonTap: function(button, e, options) {
+        var testPanel = Ext.getCmp('testPanel');
+        var outputfield = Ext.getCmp("outputfield");
 
         if(button.getItemId().search(/keyboardShift.+/)!=-1){
 
@@ -83,54 +85,47 @@ Ext.define('MyApp.controller.MyController', {
         }else if(button.getItemId().search(/keyboardBackSpace/)!=-1){
 
             //todo handle backspace
-            var outputfield = Ext.getCmp("outputfield");
-            outputfield.setValue(outputfield.getValue().substring(0,outputfield.getValue().length-1));
-        }
-        else if(button.getItemId().search(/keyboardSpace.+/)!=-1){
-            //todo handle space
+            var typedWord = outputfield.getValue().substring(0,outputfield.getValue().length-1);
+            outputfield.setValue(typedWord);
+
+            var iscorrect = testPanel.check(typedWord);
+            if(iscorrect){
+                outputfield.setStyle("background-color: transparent;");
+            }else{
+                outputfield.setStyle("background-color: #F05050;");
+            }
+
+        }else if(button.getItemId().search(/keyboardSpace.+/)!=-1){
 
             //leere schreibfeld
-            var outputfield = Ext.getCmp("outputfield");
             var word = outputfield.getValue();
             outputfield.setValue("");
 
-            var testPanel = Ext.getCmp('testPanel');
-            testPanel.checkCurrentChar(" ");
+            testPanel.characterCounter++; // zähle leertaste als character
+            testPanel.counter(word);
 
             console.info('errorcounter: '+testPanel.characterErrorCounter);
             console.info('charcounter:' +testPanel.characterCounter);
             console.info('wordcounter:' +testPanel.currentWord);
 
+            outputfield.setStyle("background-color: transparent;");    
 
-            testPanel.checkCurrentWord(word);
+        }else if(button.getItemId().search(/keyboard.+/)!=-1){
 
-
-            //setzte neuen satz
-            //var outputPanel = .getComponent("textPanel").getComponent("outputPanel");
-
-            //console.info(outputPanel);
-
-        }
-        else if(button.getItemId().search(/keyboard.+/)!=-1){
-
-            //todo schreibe in das outputfield den text des buttons
-            //überprüfe ob schift gedrückt oder nicht
-
-            //var outputfield = Ext.getCmp("outputfield");
+            // schreibe in das outputfield den text des buttons
             var typedChar = button.getText();
+            var typedWord = Ext.getCmp("outputfield").getValue();
+            typedWord = typedWord + typedChar;
 
-            var text = Ext.getCmp("outputfield").getValue() + typedChar;
-            Ext.getCmp("outputfield").setValue(text);
+            outputfield.setValue(typedWord);
 
             var testPanel = Ext.getCmp('testPanel');
-            testPanel.checkCurrentChar(typedChar);
-
-            console.info('errorcounter: '+testPanel.characterErrorCounter);
-            console.info('charcounter:' +testPanel.characterCounter);
-            console.info('wordcounter:' +testPanel.currentWord);
-
-
-
+            var iscorrect = testPanel.check(typedWord);
+            if(iscorrect){
+                outputfield.setStyle("background-color: transparent;");
+            }else{
+                outputfield.setStyle("background-color: #F05050;");
+            }
         }
 
     }

@@ -78,7 +78,6 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     startTest: function() {
-        this.testresults = [];
         this.doStep(0);
     },
 
@@ -92,12 +91,6 @@ Ext.define('MyApp.view.RootPanel', {
             testpanel.setKeyboard(keyboard);
 
             var task = new Ext.util.DelayedTask(function() {
-                // Werte des Tests rausholen
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });
-
                 this.doStep(0.5);
             }, this);
             task.delay(60000);
@@ -112,13 +105,9 @@ Ext.define('MyApp.view.RootPanel', {
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
             var task = new Ext.util.DelayedTask(function() {
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });            
                 this.doStep(1.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();
         }else if(number == 1.5){
             Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
@@ -130,13 +119,9 @@ Ext.define('MyApp.view.RootPanel', {
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
             var task = new Ext.util.DelayedTask(function() {
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });
                 this.doStep(2.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();
         }else if(number == 2.5){
             Ext.Msg.alert('', 'Thank you! Now try another keyboard layout.', function(){
@@ -152,13 +137,9 @@ Ext.define('MyApp.view.RootPanel', {
             testpanel.setKeyboard(keyboard);
 
             var task = new Ext.util.DelayedTask(function() {
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });
                 this.doStep(3.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();        
         }else if(number == 3.5){
             Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
@@ -170,13 +151,9 @@ Ext.define('MyApp.view.RootPanel', {
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
             var task = new Ext.util.DelayedTask(function() {
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });
                 this.doStep(4.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();        
         }else if(number == 4.5){
             Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
@@ -188,13 +165,9 @@ Ext.define('MyApp.view.RootPanel', {
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
             var task = new Ext.util.DelayedTask(function() {
-                this.testresults.push({
-                    characters: this.characterCounter,
-                    errors: this.characterErrorCounter
-                });
                 this.doStep(5.5);
             }, this);
-            task.delay(5000);
+            task.delay(60000);
             testpanel.startTest();        
         }else if(number == 5.5){
             Ext.Msg.alert('', 'Thats all. Now we will upload your usage informations.', function(){
@@ -210,23 +183,23 @@ Ext.define('MyApp.view.RootPanel', {
         Ext.Ajax.request({
             url: 'upload.php',
             params: {
-                test11Characters: this.testresults[0].characters,
-                test11Errors: this.testresults[0].errors,
+                test11Characters: 5,
+                test11Errors: 2,
 
-                test12Characters: this.testresults[1].characters,
-                test12Errors: this.testresults[1].errors,
+                test12Characters: 5,
+                test12Errors: 2,
 
-                test13Characters: this.testresults[2].characters,
-                test13Errors: this.testresults[2].errors,
+                test13Characters: 5,
+                test13Errors: 2,
 
-                test21Characters: this.testresults[3].characters,
-                test21Errors: this.testresults[3].errors,
+                test21Characters: 5,
+                test21Errors: 2,
 
-                test22Characters: this.testresults[4].characters,
-                test22Errors: this.testresults[4].errors,
+                test22Characters: 5,
+                test22Errors: 2,
 
-                test23Characters: this.testresults[5].characters,
-                test23Errors: this.testresults[5].errors
+                test23Characters: 5,
+                test23Errors: 2    
             },
             success: function(response){
                 //var text = response.responseText;

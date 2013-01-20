@@ -159,34 +159,67 @@ Ext.define('MyApp.view.TestPanel', {
 
     setKeyboard: function(keyboard) {
         this.removeAt(this.getItems().length-1);
-
         this.add(keyboard);
-        keyboard.on('wordcomplete', function(word){
-            this.checkCurrentWord(word);
-        }, this);
     },
 
-    checkCurrentWord: function(word) {
+    counter: function(word) {
         // ToDo: ist word an aktueller Stelle richtig?
         // ToDo: abhängig davon rot oder grün einfärben.
-        var words = this.phrase1.split(" ");
+        var phrase1 = this.phrase1.replace(/<\/?[^>]+(>|$)/g, "");
+        var words = phrase1.split(" ");
         var phraseWord = words[this.currentWord];
         // Prüfen word == phraseWord
 
+        var errorCounter = 0;
+        for(var i = 0; i < word.length; i++){
+            typedCharacter = word.charAt(i);
+            if(phraseWord.length-1 > i){
+                // Prüfe, ob aktueller Buchstabe korrekt ist
+                var givenCharacter = phraseWord.charAt(i);
+                if(typedCharacter != givenCharacter){
+                    errorCounter++;
+                }
+            }else{
+                // typedWord zu kurz, restlichen Buchstaben als Fehler
+                errorCounter++;
+            }
+        }
+        // wenn zu kurz, Rest fehler
+        if(i < phraseWord.length){
+            errorCounter = errorCounter + (phraseWord.length -i);
+        }
+
+        // markiere aktuelles Wort grün oder rot
+        var phraseWordHtml = "";
+        if(errorCounter == 0){
+            // grün
+            console.info("grün");
+            phraseWordHtml = "<span style=\"color: green;\">" + phraseWord + "</span>";
+        }else{
+            // rot
+            console.info("rot");
+            phraseWordHtml = "<span style=\"color: red;\">" + phraseWord + "</span>";
+        }
 
         // Zähle Buckstaben: vom wort gesamt, falsche buchstaben
-        // this.characterCounter += X;
-        // this.characterErrorCounter += Y;
+        this.characterCounter += word.length;
+        this.characterErrorCounter += errorCounter;
+
+        // erzeuge this.phrase1 aus Teilen
+        this.phrase1 = this.phrase1.replace(new RegExp(phraseWord,"i"), phraseWordHtml);
 
         this.currentWord++;
-        if(this.currentWord > words.length){
+        if(this.currentWord >= words.length){
             this.phrase1 = this.phrase2;
             this.phrase2 = this.getNextPhrase();
             this.currentWord = 0;
 
-            var output = this.phrase1 + "<br/><br/>" + this.phrase2;
-            this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
         }
+
+        // Print outputArea
+        var output = this.phrase1 + "<br/><br/>" + this.phrase2;
+        this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
+
     },
 
     startTest: function() {
@@ -205,29 +238,14 @@ Ext.define('MyApp.view.TestPanel', {
         this.characterErrorCounter = 0;
     },
 
-    checkCurrentChar: function(char) {
-        // ToDo: ist char an aktueller Stelle richtig?
-        // ToDo: abhängig davon rot oder grün einfärben.
-        var charPhrase = this.phrase1.split("");
-        var phraseChar = charPhrase[this.currentChar];
-        // Prüfen word == phraseWord
+    check: function(word) {
+        var phrase1 = this.phrase1.replace(/<\/?[^>]+(>|$)/g, "");
+        var words = phrase1.split(" ");
+        var phraseWord = words[this.currentWord];
 
+        var iscorrect = phraseWord.indexOf(word) == 0;
 
-
-        if(phraseChar == char){
-            this.characterCounter += 1;
-        }else{
-            this.characterCounter += 1;
-            this.characterErrorCounter += 1;
-        }
-
-
-        // Zähle Buckstaben: vom wort gesamt, falsche buchstaben
-        // this.characterCounter += X;
-        // this.characterErrorCounter += Y;
-
-        this.currentChar++;
-
+        return iscorrect;
     }
 
 });
