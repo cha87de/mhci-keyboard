@@ -29,6 +29,7 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel1",
+                "itemId": "leftKeyboard",
                 "margin": null
             },
             "designerId": "016d383b-414e-4fb6-b49d-901f40350756",
@@ -282,8 +283,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel6",
-                        "id": "qwertPanel",
-                        "itemId": null,
+                        "id": null,
+                        "itemId": "qwertPanel",
                         "layout": "hbox"
                     },
                     "designerId": "a81db9a4-aec8-4a3b-9542-59518b92d937",
@@ -384,7 +385,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel7",
-                        "id": "asdfgPanel",
+                        "id": null,
+                        "itemId": "asdfgPanel",
                         "layout": "hbox"
                     },
                     "designerId": "e38278f8-96d7-42ca-a468-d3aa294bd597",
@@ -485,7 +487,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel8",
-                        "id": "shzxcvPanel",
+                        "id": null,
+                        "itemId": "shzxcvPanel",
                         "layout": "hbox"
                     },
                     "designerId": "3960d0f4-da8b-4ddf-b461-f2b90087382e",
@@ -620,7 +623,8 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "designer|userClassName": "MyPanel15"
+                "designer|userClassName": "MyPanel15",
+                "itemId": "outputPanel"
             },
             "designerId": "84458ab3-f6d6-4874-b86e-8149fc30f2cf",
             "cn": [
@@ -634,8 +638,8 @@
                     "userConfig": {
                         "designer|userClassName": "MyTextField",
                         "docked": null,
-                        "id": "outputfield",
-                        "itemId": null,
+                        "id": null,
+                        "itemId": "outputfield",
                         "label": "",
                         "name": "outputfield",
                         "readOnly": true
@@ -654,6 +658,7 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel2",
+                "itemId": "rightKeyboard",
                 "margin": null
             },
             "designerId": "8bd8cad6-a57d-4d46-82fb-c1a6384888a7",
@@ -831,7 +836,8 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel11",
-                        "id": "yuiopPanel",
+                        "id": "",
+                        "itemId": "yuiopPanel",
                         "margin": null,
                         "layout": "hbox"
                     },
@@ -935,7 +941,8 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel12",
-                        "id": "hjklPanel",
+                        "id": "",
+                        "itemId": "hjklPanel",
                         "layout": "hbox"
                     },
                     "designerId": "c211a429-feab-42e6-858e-b5080d6597a7",
@@ -1021,7 +1028,8 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel13",
-                        "id": "bnmshPanel",
+                        "id": "",
+                        "itemId": "bnmshPanel",
                         "layout": "hbox"
                     },
                     "designerId": "7ae344d2-b0b5-4d09-bc1a-df18aaedde59",
