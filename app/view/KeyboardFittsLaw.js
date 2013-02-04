@@ -30,7 +30,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'leftKeyboard',
                 items: [
                     {
                         xtype: 'panel',
@@ -91,7 +90,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'qwertPanel',
+                        id: 'qwertPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -140,7 +139,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'asdfgPanel',
+                        id: 'asdfgPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -189,7 +188,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'shzxcvPanel',
+                        id: 'shzxcvPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -257,11 +256,10 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'outputPanel',
                 items: [
                     {
                         xtype: 'textfield',
-                        itemId: 'outputfield',
+                        id: 'outputfield',
                         label: '',
                         name: 'outputfield',
                         readOnly: true
@@ -271,7 +269,6 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'rightKeyboard',
                 items: [
                     {
                         xtype: 'panel',
@@ -325,8 +322,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        id: '',
-                        itemId: 'yuiopPanel',
+                        id: 'yuiopPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',
@@ -377,8 +373,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        id: '',
-                        itemId: 'hjklPanel',
+                        id: 'hjklPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',
@@ -421,8 +416,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     },
                     {
                         xtype: 'panel',
-                        id: '',
-                        itemId: 'bnmshPanel',
+                        id: 'bnmshPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',

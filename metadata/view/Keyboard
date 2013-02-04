@@ -9,7 +9,6 @@
         "container|align": "center",
         "container|pack": "center",
         "designer|userClassName": "Keyboard",
-        "designer|userAlias": "Keyboard",
         "id": "keyboard",
         "itemId": null,
         "margin": 5,
@@ -29,7 +28,6 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel1",
-                "itemId": "leftKeyboard",
                 "margin": null
             },
             "designerId": "b0caf494-da24-41e1-843e-2a7ae8a96052",
@@ -283,9 +281,8 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel6",
-                        "id": null,
-                        "itemId": "qwertPanel",
-                        "maxWidth": null,
+                        "id": "qwertPanel",
+                        "itemId": null,
                         "layout": "hbox"
                     },
                     "designerId": "e94d5c97-c581-4fb6-873c-e5558d8d86b8",
@@ -386,8 +383,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel7",
-                        "id": "",
-                        "itemId": "asdfgPanel",
+                        "id": "asdfgPanel",
                         "layout": "hbox"
                     },
                     "designerId": "06ca7bf7-ee0f-4fec-a46a-4bfc2293181d",
@@ -488,8 +484,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyPanel8",
-                        "id": null,
-                        "itemId": "shzxcvPanel",
+                        "id": "shzxcvPanel",
                         "layout": "hbox"
                     },
                     "designerId": "a1dea575-f3a6-4623-8919-f82d937d4d4d",
@@ -624,8 +619,7 @@
             "codeClass": null,
             "userConfig": {
                 "layout|flex": 1,
-                "designer|userClassName": "MyPanel15",
-                "itemId": "outputPanel"
+                "designer|userClassName": "MyPanel15"
             },
             "designerId": "597913f7-aa97-4a8d-8258-e8abbf1b4c00",
             "cn": [
@@ -639,8 +633,8 @@
                     "userConfig": {
                         "designer|userClassName": "MyTextField",
                         "docked": null,
-                        "id": null,
-                        "itemId": "outputfield",
+                        "id": "outputfield",
+                        "itemId": null,
                         "label": "",
                         "name": "outputfield",
                         "readOnly": true
@@ -659,7 +653,6 @@
             "userConfig": {
                 "layout|flex": 1,
                 "designer|userClassName": "MyPanel2",
-                "itemId": "rightKeyboard",
                 "margin": null
             },
             "designerId": "19ac04fa-5ddb-42a7-9e41-2904cec1d964",
@@ -837,8 +830,7 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel11",
-                        "id": "",
-                        "itemId": "yuiopPanel",
+                        "id": "yuiopPanel",
                         "margin": null,
                         "layout": "hbox"
                     },
@@ -942,8 +934,7 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel12",
-                        "id": null,
-                        "itemId": "hjklPanel",
+                        "id": "hjklPanel",
                         "layout": "hbox"
                     },
                     "designerId": "ce0a7ee9-33df-421e-b347-70227210d617",
@@ -1029,8 +1020,7 @@
                         "container|align": "end",
                         "container|pack": "end",
                         "designer|userClassName": "MyPanel13",
-                        "id": null,
-                        "itemId": "bnmshPanel",
+                        "id": "bnmshPanel",
                         "layout": "hbox"
                     },
                     "designerId": "f7972975-e41f-4069-9e8d-f3ecfca327a1",

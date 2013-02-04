@@ -6,8 +6,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Tablet KeyboardGame</title>
-    <script src="/lib/ext/sencha-touch-2.0.1.1/sencha-touch-all.js"></script>
-    <link rel="stylesheet" href="/lib/ext/sencha-touch-2.0.1.1/resources/css/sencha-touch.css">
+    <script src="http://extjs.cachefly.net/touch/sencha-touch-2.0.1.1/sencha-touch-all.js"></script>
+    <link rel="stylesheet" href="http://extjs.cachefly.net/touch/sencha-touch-2.0.1.1/resources/css/sencha-touch.css">
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript">
         if (!Ext.browser.is.WebKit) {
@@ -51,12 +51,12 @@
                 $params = array(
                     ":fbId" => intval($userId)
                 );
-                $queryStatement = "SELECT 1 FROM user WHERE fbId = :fbId";
+                $queryStatement = "SELECT 1 FROM user WHERE fbId = :fbId AND endtime IS NOT NULL";
                 $query = $pdo->prepare($queryStatement);
                 $statementSuccessful = $query->execute($params);
                 if(!$statementSuccessful)
                     throw new Exception("Error fetching database information.");
-                if($query->rowCount() == 0 || true){ // FÜR TESTZWECKE SCHUMMELN
+                if($query->rowCount() == 0){ // || true){ // FÜR TESTZWECKE SCHUMMELN
                     echo "appState.userknown = false;";
                     
                     // Setze Benutzer als "bereits ausgeführt"
@@ -90,6 +90,15 @@
             }
         ?>
     </script>    
+    
+    <style>
+        #outputPanel span {
+            color: green !important;
+        }
+        #outputPanel i {
+            color: red !important;
+        }        
+    </style>
 
 </head>
 <body></body>

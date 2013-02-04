@@ -193,10 +193,10 @@ Ext.define('MyApp.view.TestPanel', {
         var phraseWordHtml = "";
         if(errorCounter == 0){
             // grün
-            phraseWordHtml = "<span style=\"color: green;\">" + phraseWord + "</span>";
+            phraseWordHtml = "<span>" + phraseWord + "</span>";
         }else{
             // rot
-            phraseWordHtml = "<span style=\"color: red;\">" + phraseWord + "</span>";
+            phraseWordHtml = "<i>" + phraseWord + "</i>";
         }
 
         // Zähle Buckstaben: vom wort gesamt, falsche buchstaben

@@ -15,7 +15,6 @@
 
 Ext.define('MyApp.view.Keyboard', {
     extend: 'Ext.Panel',
-    alias: 'widget.Keyboard',
 
     config: {
         id: 'keyboard',
@@ -30,7 +29,6 @@ Ext.define('MyApp.view.Keyboard', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'leftKeyboard',
                 items: [
                     {
                         xtype: 'panel',
@@ -91,7 +89,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'qwertPanel',
+                        id: 'qwertPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -140,8 +138,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        id: '',
-                        itemId: 'asdfgPanel',
+                        id: 'asdfgPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -190,7 +187,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'shzxcvPanel',
+                        id: 'shzxcvPanel',
                         layout: {
                             type: 'hbox'
                         },
@@ -258,11 +255,10 @@ Ext.define('MyApp.view.Keyboard', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'outputPanel',
                 items: [
                     {
                         xtype: 'textfield',
-                        itemId: 'outputfield',
+                        id: 'outputfield',
                         label: '',
                         name: 'outputfield',
                         readOnly: true
@@ -272,7 +268,6 @@ Ext.define('MyApp.view.Keyboard', {
             {
                 xtype: 'panel',
                 flex: 1,
-                itemId: 'rightKeyboard',
                 items: [
                     {
                         xtype: 'panel',
@@ -326,8 +321,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        id: '',
-                        itemId: 'yuiopPanel',
+                        id: 'yuiopPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',
@@ -378,7 +372,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'hjklPanel',
+                        id: 'hjklPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',
@@ -421,7 +415,7 @@ Ext.define('MyApp.view.Keyboard', {
                     },
                     {
                         xtype: 'panel',
-                        itemId: 'bnmshPanel',
+                        id: 'bnmshPanel',
                         layout: {
                             align: 'end',
                             pack: 'end',

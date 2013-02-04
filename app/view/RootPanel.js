@@ -108,7 +108,7 @@ Ext.define('MyApp.view.RootPanel', {
 
 
             Ext.Msg.alert('Let\'s start!', 'ready?', function(){
-                task.delay(10000);
+                task.delay(60000);
                 testpanel.startTest();
             }, this);     
         };
@@ -158,7 +158,7 @@ Ext.define('MyApp.view.RootPanel', {
 
         var resultsum = function(){
             var resultsum = this.calculateSumResult();
-            Ext.Msg.alert('Your testresults', 'You wrote ' + resultsum['characters'] + ' characters and made ' + resultsum['errors'] + ' mistakes within one minute.', function(){
+            Ext.Msg.alert('Your overall score', 'You wrote ' + resultsum['characters'] + ' characters and made ' + resultsum['errors'] + ' mistakes within one minute.', function(){
                 this.doStep(++number);
             }, this);      
         };

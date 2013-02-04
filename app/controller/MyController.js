@@ -25,34 +25,25 @@ Ext.define('MyApp.controller.MyController', {
     },
 
     onButtonTap: function(button, e, options) {
-
-
         var testPanel = Ext.getCmp('testPanel');
-
-
-        var keyboard = Ext.getCmp("keyboardFittsLaw");
-
-        if(keyboard == null || typeof keyboard == 'undefined'){
-            keyboard = Ext.getCmp("keyboard");
-            //console.info('defaultkeybopard');
-        }else{
-            //console.info('fitts');
-        }
-        if(keyboard != null && typeof keyboard != 'undefined'){
-            var outputfield = keyboard.getComponent('outputPanel').getComponent('outputfield');
-
-        }
+        var outputfield = Ext.getCmp("outputfield");
 
         // SHIFT-BUTTON
         if(button.getItemId().search(/keyboardShift.+/)!=-1){
 
+            //var keyboard = Ext.getCmp("keyboardFittsLaw");
+            var keyboard = MyApp.view.KeyboardFittsLaw();
 
-            var qwert = keyboard.getComponent('leftKeyboard').getComponent("qwertPanel").items.items;
-            var asdfg = keyboard.getComponent('leftKeyboard').getComponent("asdfgPanel").items.items;
-            var shzxcv = keyboard.getComponent('leftKeyboard').getComponent("shzxcvPanel").items.items;
-            var yuiop = keyboard.getComponent('rightKeyboard').getComponent("yuiopPanel").items.items;
-            var hjkl = keyboard.getComponent('rightKeyboard').getComponent("hjklPanel").items.items;
-            var bnmsh = keyboard.getComponent('rightKeyboard').getComponent("bnmshPanel").items.items;
+            if(keyboard == null || typeof keyboard == 'undefined'){
+                keyboard = Ext.getCmp("keyboard");
+            }
+
+            var qwert = Ext.getCmp("qwertPanel").items.items;
+            var asdfg = Ext.getCmp("asdfgPanel").items.items;
+            var shzxcv = Ext.getCmp("shzxcvPanel").items.items;
+            var yuiop = Ext.getCmp("yuiopPanel").items.items;
+            var hjkl = Ext.getCmp("hjklPanel").items.items;
+            var bnmsh = Ext.getCmp("bnmshPanel").items.items;
 
             if(keyboard.shift){
                 keyboard.shift = false;
@@ -124,11 +115,9 @@ Ext.define('MyApp.controller.MyController', {
             // CHARACTER-BUTTONS
         }else if(button.getItemId().search(/keyboard.+/)!=-1){
 
-
-
             // schreibe in das outputfield den text des buttons
             var typedChar = button.getText();
-            var typedWord = outputfield.getValue();
+            var typedWord = Ext.getCmp("outputfield").getValue();
             typedWord = typedWord + typedChar;
 
             outputfield.setValue(typedWord);
