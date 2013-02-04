@@ -82,103 +82,97 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     doStep: function(number) {
-        if(number == 0){
-            // Test 1, Durchlauf 1:
+
+        // Define Functions, used in timeline
+        var executeTest = function(){
+            this.setActiveItem(1);
+            var testpanel = this.getActiveItem();
+
+            var task = new Ext.util.DelayedTask(function() {
+                var usermsg = 'You wrote ' + testpanel.characterCounter + ' characters and made ' + 
+                testpanel.characterErrorCounter + ' mistakes.';
+
+                Ext.Msg.alert('Well done!', usermsg, function(){
+                    this.doStep(++number);
+                }, this);            
+            }, this);
+
+
+            Ext.Msg.alert('Let\'s start!', 'ready?', function(){
+                task.delay(60000);
+                testpanel.startTest();
+            }, this);     
+        };
+
+        var setKeyboard = function(){
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
 
             var keyboard = (appState.firstTest == 'a') ? new MyApp.view.Keyboard() : new MyApp.view.KeyboardFittsLaw();
             testpanel.setKeyboard(keyboard);
 
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(0.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();
-        }else if(number == 0.5){
-            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
-                this.doStep(1);
-            }, this);
+            this.doStep(++number);
+        };   
 
-        }else if(number == 1){
-            // Test 1, Durchlauf 2:
-            this.setActiveItem(1);
-            var testpanel = this.getActiveItem();
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(1.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();
-        }else if(number == 1.5){
-            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
-                this.doStep(2);
-            }, this);
-
-        }else if(number == 2){
-            // Test 1, Durchlauf 3:
-            this.setActiveItem(1);
-            var testpanel = this.getActiveItem();
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(2.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();
-        }else if(number == 2.5){
-            Ext.Msg.alert('', 'Thank you! Now try another keyboard layout.', function(){
-                this.doStep(3);
-            }, this);    
-
-        }else if(number == 3){
-            // Test 2, Durchlauf 1:
+        var changeKeyboard = function(){
             this.setActiveItem(1);
             var testpanel = this.getActiveItem();
 
             var keyboard = (appState.firstTest == 'a') ? new MyApp.view.KeyboardFittsLaw() : new MyApp.view.Keyboard();
-            testpanel.setKeyboard(keyboard);
+            testpanel.setKeyboard(keyboard);     
 
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(3.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();        
-        }else if(number == 3.5){
-            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
-                this.doStep(4);
-            }, this);      
+            Ext.Msg.alert('Replace the Keyboard', 'Will you do it even better? Let\s see!', function(){
+                this.doStep(++number);
+            }, this);             
+        };
 
-        }else if(number == 4){
-            // Test 2, Durchlauf 2:
-            this.setActiveItem(1);
-            var testpanel = this.getActiveItem();
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(4.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();        
-        }else if(number == 4.5){
-            Ext.Msg.alert('', 'Thank you, please do it once more ...', function(){
-                this.doStep(5);
-            }, this);      
-
-        }else if(number == 5){
-            // Test 2, Durchlauf 3:
-            this.setActiveItem(1);
-            var testpanel = this.getActiveItem();
-            var task = new Ext.util.DelayedTask(function() {
-                this.doStep(5.5);
-            }, this);
-            task.delay(60000);
-            testpanel.startTest();        
-        }else if(number == 5.5){
+        var uploadUsageInformation = function(){
             Ext.Msg.alert('', 'Thats all. Now we will upload your usage informations.', function(){
-                this.uploadData()
+                this.uploadData(function(response){
+                    this.doStep(++number);
+                }, this);
+            }, this);          
+        };
+
+        var postOnFacebook = function(){
+            Ext.Msg.confirm('', 'Tell your friends on Facebook! Ok?', function(btn){
+                if(btn == 'yes'){
+                    this.postOnFacebook(function(response){
+                        this.doStep(++number);
+                    }, this);
+                }else{
+                    this.doStep(++number);
+                }
+            }, this)
+        };
+
+        var goodbye = function(){
+            Ext.Msg.alert('Finished!', 'Thank you for your support! Goodbye!', function(){
+                this.setActiveItem(0);
             }, this);      
+        };
 
+        // Define timeline
+        var timeline = [
+        setKeyboard,
+        executeTest,
+        executeTest,
+        executeTest,
+        changeKeyboard,
+        executeTest,
+        executeTest,
+        executeTest,
+        uploadUsageInformation,
+        postOnFacebook,
+        goodbye
+        ];
 
-        }
+        // find and execute current neccessary function
+        var currentFunction = timeline[number];
+        currentFunction.apply(this, []);
     },
 
-    uploadData: function() {
+    uploadData: function(callback, scope) {
 
         Ext.Ajax.request({
             url: 'upload.php',
@@ -201,14 +195,39 @@ Ext.define('MyApp.view.RootPanel', {
                 test23Characters: 5,
                 test23Errors: 2    
             },
-            success: function(response){
-                //var text = response.responseText;
-                Ext.Msg.alert('', 'Great! Finished!', function(){
-                    this.setActiveItem(0);
-                }, this)
-            }
+            success: callback,
+            scope: scope
         });
 
+
+    },
+
+    postOnFacebook: function(callback, scope) {
+
+        Ext.Ajax.request({
+            url: 'postOnFacebook.php',
+            params: {
+                test11Characters: 5,
+                test11Errors: 2,
+
+                test12Characters: 5,
+                test12Errors: 2,
+
+                test13Characters: 5,
+                test13Errors: 2,
+
+                test21Characters: 5,
+                test21Errors: 2,
+
+                test22Characters: 5,
+                test22Errors: 2,
+
+                test23Characters: 5,
+                test23Errors: 2    
+            },
+            success: callback,
+            scope: scope
+        });
 
     }
 

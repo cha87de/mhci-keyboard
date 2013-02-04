@@ -28,6 +28,7 @@ Ext.define('MyApp.controller.MyController', {
         var testPanel = Ext.getCmp('testPanel');
         var outputfield = Ext.getCmp("outputfield");
 
+        // SHIFT-BUTTON
         if(button.getItemId().search(/keyboardShift.+/)!=-1){
 
             //var keyboard = Ext.getCmp("keyboardFittsLaw");
@@ -81,7 +82,7 @@ Ext.define('MyApp.controller.MyController', {
 
 
 
-
+            // BACKSPACE-BUTTONS
         }else if(button.getItemId().search(/keyboardBackSpace/)!=-1){
 
             //todo handle backspace
@@ -95,6 +96,8 @@ Ext.define('MyApp.controller.MyController', {
                 outputfield.setStyle("background-color: #F05050;");
             }
 
+
+            // SPACE-BUTTONS
         }else if(button.getItemId().search(/keyboardSpace.+/)!=-1){
 
             //leere schreibfeld
@@ -106,10 +109,10 @@ Ext.define('MyApp.controller.MyController', {
 
             console.info('errorcounter: '+testPanel.characterErrorCounter);
             console.info('charcounter:' +testPanel.characterCounter);
-            console.info('wordcounter:' +testPanel.currentWord);
 
             outputfield.setStyle("background-color: transparent;");    
 
+            // CHARACTER-BUTTONS
         }else if(button.getItemId().search(/keyboard.+/)!=-1){
 
             // schreibe in das outputfield den text des buttons

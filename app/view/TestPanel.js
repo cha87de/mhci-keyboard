@@ -173,7 +173,7 @@ Ext.define('MyApp.view.TestPanel', {
         var errorCounter = 0;
         for(var i = 0; i < word.length; i++){
             typedCharacter = word.charAt(i);
-            if(phraseWord.length-1 > i){
+            if(phraseWord.length > i){
                 // Prüfe, ob aktueller Buchstabe korrekt ist
                 var givenCharacter = phraseWord.charAt(i);
                 if(typedCharacter != givenCharacter){
@@ -193,11 +193,9 @@ Ext.define('MyApp.view.TestPanel', {
         var phraseWordHtml = "";
         if(errorCounter == 0){
             // grün
-            console.info("grün");
             phraseWordHtml = "<span style=\"color: green;\">" + phraseWord + "</span>";
         }else{
             // rot
-            console.info("rot");
             phraseWordHtml = "<span style=\"color: red;\">" + phraseWord + "</span>";
         }
 
@@ -233,6 +231,11 @@ Ext.define('MyApp.view.TestPanel', {
 
         var output = this.phrase1 + "<br/><br/>" + this.phrase2;
         this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
+
+        if(Ext.getCmp("outputfield")) {
+            Ext.getCmp("outputfield").setValue("");
+            Ext.getCmp("outputfield").setStyle("background-color: transparent;");
+        }
 
         this.characterCounter = 0;
         this.characterErrorCounter = 0;
