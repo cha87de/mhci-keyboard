@@ -92,6 +92,15 @@ Ext.define('MyApp.view.RootPanel', {
                 var usermsg = 'You wrote ' + testpanel.characterCounter + ' characters and made ' + 
                 testpanel.characterErrorCounter + ' mistakes.';
 
+                // speichere Test-Ergebnisse für späteren Upload
+                if(!this.testresults){
+                    this.testresults = new Array();
+                }
+                this.testresults.push({
+                    'characters': testpanel.characterCounter,
+                    'errors': testpanel.characterErrorCounter
+                });
+
                 Ext.Msg.alert('Well done!', usermsg, function(){
                     this.doStep(++number);
                 }, this);            
@@ -99,7 +108,7 @@ Ext.define('MyApp.view.RootPanel', {
 
 
             Ext.Msg.alert('Let\'s start!', 'ready?', function(){
-                task.delay(60000);
+                task.delay(10000);
                 testpanel.startTest();
             }, this);     
         };
@@ -121,13 +130,13 @@ Ext.define('MyApp.view.RootPanel', {
             var keyboard = (appState.firstTest == 'a') ? new MyApp.view.KeyboardFittsLaw() : new MyApp.view.Keyboard();
             testpanel.setKeyboard(keyboard);     
 
-            Ext.Msg.alert('Replace the Keyboard', 'Will you do it even better? Let\s see!', function(){
+            Ext.Msg.alert('Replace the Keyboard', 'Will you do it even better? Let\'s see!', function(){
                 this.doStep(++number);
             }, this);             
         };
 
         var uploadUsageInformation = function(){
-            Ext.Msg.alert('', 'Thats all. Now we will upload your usage informations.', function(){
+            Ext.Msg.alert('', 'Thats all. Now we will upload your usage information.', function(){
                 this.uploadData(function(response){
                     this.doStep(++number);
                 }, this);
@@ -146,6 +155,14 @@ Ext.define('MyApp.view.RootPanel', {
             }, this)
         };
 
+
+        var resultsum = function(){
+            var resultsum = this.calculateSumResult();
+            Ext.Msg.alert('Your testresults', 'You wrote ' + resultsum['characters'] + ' characters and made ' + resultsum['errors'] + ' mistakes within one minute.', function(){
+                this.doStep(++number);
+            }, this);      
+        };
+
         var goodbye = function(){
             Ext.Msg.alert('Finished!', 'Thank you for your support! Goodbye!', function(){
                 this.setActiveItem(0);
@@ -162,6 +179,7 @@ Ext.define('MyApp.view.RootPanel', {
         executeTest,
         executeTest,
         executeTest,
+        resultsum,
         uploadUsageInformation,
         postOnFacebook,
         goodbye
@@ -177,23 +195,23 @@ Ext.define('MyApp.view.RootPanel', {
         Ext.Ajax.request({
             url: 'upload.php',
             params: {
-                test11Characters: 5,
-                test11Errors: 2,
+                test11Characters: this.testresults[0]['characters'],
+                test11Errors: this.testresults[0]['errors'],
 
-                test12Characters: 5,
-                test12Errors: 2,
+                test12Characters: this.testresults[1]['characters'],
+                test12Errors: this.testresults[1]['errors'],
 
-                test13Characters: 5,
-                test13Errors: 2,
+                test13Characters: this.testresults[2]['characters'],
+                test13Errors: this.testresults[2]['errors'],
 
-                test21Characters: 5,
-                test21Errors: 2,
+                test21Characters: this.testresults[3]['characters'],
+                test21Errors: this.testresults[3]['errors'],
 
-                test22Characters: 5,
-                test22Errors: 2,
+                test22Characters: this.testresults[4]['characters'],
+                test22Errors: this.testresults[4]['errors'],
 
-                test23Characters: 5,
-                test23Errors: 2    
+                test23Characters: this.testresults[5]['characters'],
+                test23Errors: this.testresults[5]['errors']
             },
             success: callback,
             scope: scope
@@ -203,32 +221,31 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     postOnFacebook: function(callback, scope) {
-
+        var resultsum = this.calculateSumResult();
         Ext.Ajax.request({
             url: 'postOnFacebook.php',
-            params: {
-                test11Characters: 5,
-                test11Errors: 2,
-
-                test12Characters: 5,
-                test12Errors: 2,
-
-                test13Characters: 5,
-                test13Errors: 2,
-
-                test21Characters: 5,
-                test21Errors: 2,
-
-                test22Characters: 5,
-                test22Errors: 2,
-
-                test23Characters: 5,
-                test23Errors: 2    
-            },
+            params: resultsum,
             success: callback,
             scope: scope
         });
 
+    },
+
+    calculateSumResult: function() {
+        var characters = 0;
+        var errors = 0;
+
+
+        for(var i = 0; i<=5; i++){
+            characters += this.testresults[i]['characters'];
+            errors += this.testresults[i]['errors'];
+        }
+
+        characters = Math.round(characters/6);
+        errors = Math.round(errors/6);
+
+
+        return {'characters': characters, 'errors': errors};
     }
 
 });

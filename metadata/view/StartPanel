@@ -6,9 +6,29 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
         "designer|userClassName": "StartPanel",
-        "designer|userAlias": "startpanel"
+        "designer|userAlias": "startpanel",
+        "layout": "hbox"
     },
     "id": "ExtBox1-ext-gen12408",
-    "designerId": "9bcd34a3-9a16-474f-9396-fd3c98eb90ee"
+    "designerId": "9bcd34a3-9a16-474f-9396-fd3c98eb90ee",
+    "cn": [
+        {
+            "type": "image",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyImage",
+                "height": 800,
+                "width": 1280,
+                "src": "kurze-daumen.jpg"
+            },
+            "designerId": "729ef129-8215-43c0-a397-4a7ddaf1ca1e"
+        }
+    ]
 }

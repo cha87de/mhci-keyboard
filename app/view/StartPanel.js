@@ -18,6 +18,19 @@ Ext.define('MyApp.view.StartPanel', {
     alias: 'widget.startpanel',
 
     config: {
+        layout: {
+            align: 'center',
+            pack: 'center',
+            type: 'hbox'
+        },
+        items: [
+            {
+                xtype: 'image',
+                height: 800,
+                width: 1280,
+                src: 'kurze-daumen.jpg'
+            }
+        ]
     }
 
 });
