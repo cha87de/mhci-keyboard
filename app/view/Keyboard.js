@@ -142,6 +142,7 @@ Ext.define('MyApp.view.Keyboard', {
                         xtype: 'panel',
                         id: '',
                         itemId: 'asdfgPanel',
+                        margin: '0 0 0 25',
                         layout: {
                             type: 'hbox'
                         },
@@ -379,6 +380,7 @@ Ext.define('MyApp.view.Keyboard', {
                     {
                         xtype: 'panel',
                         itemId: 'hjklPanel',
+                        margin: '0 25 0 0',
                         layout: {
                             align: 'end',
                             pack: 'end',

@@ -301,7 +301,7 @@
                                 "itemId": "keyboardQ",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "q"
                             },
                             "designerId": "7e7da38f-9a64-43f0-98af-ed7916b05378"
@@ -318,7 +318,7 @@
                                 "itemId": "keyboardW",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 47,
                                 "text": "w"
                             },
                             "designerId": "9228ef4c-54ed-455a-a2e2-412d1732f6c1"
@@ -335,7 +335,7 @@
                                 "itemId": "keyboardE",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "e"
                             },
                             "designerId": "2301ffb1-44f8-4cf7-b6b0-171d51a96a0d"
@@ -352,7 +352,7 @@
                                 "itemId": "keyboardR",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 54,
                                 "text": "r"
                             },
                             "designerId": "4366187a-35f2-44d5-9ed5-322f7ba7285f"
@@ -369,7 +369,7 @@
                                 "itemId": "keyboardT",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "t"
                             },
                             "designerId": "d7a822bb-768a-4a3f-b172-e2271a75de00"
@@ -387,6 +387,7 @@
                         "designer|userClassName": "MyPanel7",
                         "id": null,
                         "itemId": "asdfgPanel",
+                        "margin": "0 0 0 25",
                         "layout": "hbox"
                     },
                     "designerId": "e38278f8-96d7-42ca-a468-d3aa294bd597",
@@ -403,7 +404,7 @@
                                 "itemId": "keyboardA",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "a"
                             },
                             "designerId": "a809f814-b86e-4fe5-8252-c3a872ea0a1f"
@@ -420,7 +421,7 @@
                                 "itemId": "keyboardS",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 54,
                                 "text": "s"
                             },
                             "designerId": "62a30559-baac-47e7-8776-18b791824c5b"
@@ -437,7 +438,7 @@
                                 "itemId": "keyboardD",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 54,
                                 "text": "d"
                             },
                             "designerId": "81c7c494-aeb1-4efa-bf7c-cde36da7ad0c"
@@ -454,7 +455,7 @@
                                 "itemId": "keyboardF",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 47,
                                 "text": "f"
                             },
                             "designerId": "1ae427de-31ab-4226-bbae-e2b899204327"
@@ -471,7 +472,7 @@
                                 "itemId": "keyboardG",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 47,
                                 "text": "g"
                             },
                             "designerId": "ae82c7ea-b8b8-49d2-9f5f-462c1316e771"
@@ -522,7 +523,7 @@
                                 "itemId": "keyboardZ",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "z"
                             },
                             "designerId": "3828dd06-9f48-4e64-85ad-36f1efc8cde1"
@@ -539,7 +540,7 @@
                                 "itemId": "keyboardX",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "x"
                             },
                             "designerId": "a54c1087-894d-4e3b-b3f6-7fb5ddd9dc37"
@@ -556,7 +557,7 @@
                                 "itemId": "keyboardC",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 54,
                                 "text": "c"
                             },
                             "designerId": "823b650c-c06c-47b6-901f-fb3a9c2b72db"
@@ -573,7 +574,7 @@
                                 "itemId": "keyboardV",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "v"
                             },
                             "designerId": "ab6d5e1e-e9ec-435f-9059-92d52fb134e7"
@@ -855,7 +856,7 @@
                                 "itemId": "keyboardY",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 47,
                                 "text": "y"
                             },
                             "designerId": "874b8d99-41f6-40fe-8aa7-a8f3979e6500"
@@ -872,7 +873,7 @@
                                 "itemId": "keyboardU",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 47,
                                 "text": "u"
                             },
                             "designerId": "c4a5a6bc-a464-40a3-8451-20ba64565cad"
@@ -889,7 +890,7 @@
                                 "itemId": "keyboardI",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "i"
                             },
                             "designerId": "3dcedf5a-7234-47b2-b615-59b95e1721fc"
@@ -906,7 +907,7 @@
                                 "itemId": "keyboardO",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "o"
                             },
                             "designerId": "244a664d-1c48-4ca8-baac-ffea01066428"
@@ -923,7 +924,7 @@
                                 "itemId": "keyboardP",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 47,
                                 "text": "p"
                             },
                             "designerId": "48861dba-dce4-4d65-81f5-030a43c9d3f0"
@@ -943,6 +944,7 @@
                         "designer|userClassName": "MyPanel12",
                         "id": "",
                         "itemId": "hjklPanel",
+                        "margin": "0 25 0 0",
                         "layout": "hbox"
                     },
                     "designerId": "c211a429-feab-42e6-858e-b5080d6597a7",
@@ -959,7 +961,7 @@
                                 "itemId": "keyboardH",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 54,
                                 "text": "h"
                             },
                             "designerId": "fe1d4376-05db-4b35-ad3f-48bc0ea9baec"
@@ -976,7 +978,7 @@
                                 "itemId": "keyboardJ",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "j"
                             },
                             "designerId": "dd5ea1dd-3a48-40c5-8ae4-6aa570da61b6"
@@ -993,7 +995,7 @@
                                 "itemId": "keyboardK",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "k"
                             },
                             "designerId": "9eb79422-f55b-4330-a5be-d864cef04c2e"
@@ -1010,7 +1012,7 @@
                                 "itemId": "keyboardL",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 54,
                                 "text": "l"
                             },
                             "designerId": "f73b138d-9ea8-416d-8c48-63e9b64fea45"
@@ -1046,7 +1048,7 @@
                                 "itemId": "keyboardB",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 35,
+                                "minWidth": 40,
                                 "text": "b"
                             },
                             "designerId": "ed3cc585-dc6f-4d8e-84f8-f6b4045b46d6"
@@ -1063,7 +1065,7 @@
                                 "itemId": "keyboardN",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 63,
+                                "minWidth": 60,
                                 "text": "n"
                             },
                             "designerId": "5ebec0ae-553f-4fdc-8e8a-38cd1bb5f294"
@@ -1080,7 +1082,7 @@
                                 "itemId": "keyboardM",
                                 "margin": 2,
                                 "minHeight": 39,
-                                "minWidth": 50,
+                                "minWidth": 47,
                                 "text": "m"
                             },
                             "designerId": "2a3ea204-6b45-498d-ac37-bc38945fd006"

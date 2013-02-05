@@ -152,9 +152,9 @@ Ext.define('MyApp.view.TestPanel', {
         "what a monkey sees a monkey will do"
         ];
 
-        var randomIndex = 1+100*(Math.random());
+        var randomIndex = 99*(Math.random());
         randomIndex = Math.round(randomIndex);
-        return phrases[randomIndex];
+        return " " + phrases[randomIndex] + " ";
     },
 
     setKeyboard: function(keyboard) {
@@ -164,16 +164,9 @@ Ext.define('MyApp.view.TestPanel', {
 
     counter: function(word) {
         var phrase1 = this.phrase1;
-
-        // entferne formatierungs-html-code aus satz
-        var removeItems = ['<i>', '</i>', '<span>', '</span>'];
-        for(var i = 0; i< removeItems.length; i++){
-            phrase1 = phrase1.replace(/removeItems[i]/, '');
-        }
-
+        phrase1 = phrase1.trim();
         var words = phrase1.split(" ");
         var phraseWord = words[this.currentWord];
-        // Prüfen word == phraseWord
 
         var errorCounter = 0;
         for(var i = 0; i < word.length; i++){
@@ -209,7 +202,7 @@ Ext.define('MyApp.view.TestPanel', {
         this.characterErrorCounter += errorCounter;
 
         // erzeuge this.phrase1 aus Teilen
-        this.phrase1 = this.phrase1.replace(new RegExp(phraseWord,"i"), phraseWordHtml);
+        this.phrase1 = this.phrase1.replace(new RegExp(" "+phraseWord+" ","i"), " " + phraseWordHtml + " ");
 
         this.currentWord++;
         if(this.currentWord >= words.length){
@@ -237,9 +230,15 @@ Ext.define('MyApp.view.TestPanel', {
         var output = this.phrase1 + "<br/><br/>" + this.phrase2;
         this.getComponent("textPanel").getComponent("outputPanel").setHtml(output);
 
-        if(Ext.getCmp("outputfield")) {
-            Ext.getCmp("outputfield").setValue("");
-            Ext.getCmp("outputfield").setStyle("background-color: transparent;");
+        var keyboard = Ext.getCmp("keyboardFittsLaw");
+        if(keyboard == null || typeof keyboard == 'undefined'){
+            keyboard = Ext.getCmp("keyboard");
+        }
+        if(keyboard != null && typeof keyboard != 'undefined'){
+            var outputfield = keyboard.getComponent('outputPanel').getComponent('outputfield');
+
+            outputfield.setValue("");
+            outputfield.setStyle("background-color: transparent;");
         }
 
         this.characterCounter = 0;
@@ -247,7 +246,8 @@ Ext.define('MyApp.view.TestPanel', {
     },
 
     check: function(word) {
-        var phrase1 = this.phrase1.replace(/<\/?[^>]+(>|$)/g, "");
+        var phrase1 = this.phrase1;
+        phrase1 = phrase1.trim();
         var words = phrase1.split(" ");
         var phraseWord = words[this.currentWord];
 

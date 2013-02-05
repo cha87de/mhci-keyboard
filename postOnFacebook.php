@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $result = array(
     "success" => true
@@ -36,11 +37,12 @@ try {
     // store in database
     $params = array(
         ":fbId" => intval($userId),
+        ":id" => $_SESSION["userId"],
         ":feedId" => $feedId
     );
     $queryStatement = "UPDATE user SET
     feedId = :feedId
-    WHERE `fbId` = :fbId;";
+    WHERE `id` = :id AND `fbId` = :fbId;";
     $query = $pdo->prepare($queryStatement);
     $statementSuccessful = $query->execute($params);
     if (!$statementSuccessful) {

@@ -388,6 +388,7 @@
                         "designer|userClassName": "MyPanel7",
                         "id": "",
                         "itemId": "asdfgPanel",
+                        "margin": "0 0 0 25",
                         "layout": "hbox"
                     },
                     "designerId": "06ca7bf7-ee0f-4fec-a46a-4bfc2293181d",
@@ -944,6 +945,7 @@
                         "designer|userClassName": "MyPanel12",
                         "id": null,
                         "itemId": "hjklPanel",
+                        "margin": "0 25 0 0",
                         "layout": "hbox"
                     },
                     "designerId": "ce0a7ee9-33df-421e-b347-70227210d617",

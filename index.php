@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require_once("initfb.inc.php");
   require_once("database.inc.php");
 ?><!DOCTYPE html>
@@ -82,6 +83,10 @@
                     if(!$statementSuccessful){
                         throw new Exception("Error inserting new user into database.");
                     }
+                    
+                    $id = $pdo->lastInsertId();
+                    $_SESSION["userId"] = $id;
+                    
                     echo "appState.firstTest = '" . $nextFirsttest . "';";
                 }else{
                     echo "appState.userknown = true;";

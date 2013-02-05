@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $result = array(
     "success" => true
@@ -15,6 +16,7 @@ try {
 
     $params = array(
         ":fbId" => intval($userId),
+        ":id" => $_SESSION["userId"],
         ":test11Characters" => $_REQUEST["test11Characters"],
         ":test11Errors" => $_REQUEST["test11Errors"],
         ":test12Characters" => $_REQUEST["test12Characters"],
@@ -55,7 +57,7 @@ try {
     useragent = :useragent,
     screenresolution = :screenresolution
 
-    WHERE `fbId` = :fbId;";
+    WHERE `id` = :id AND `fbId` = :fbId";
     $query = $pdo->prepare($queryStatement);
     $statementSuccessful = $query->execute($params);
     if (!$statementSuccessful) {

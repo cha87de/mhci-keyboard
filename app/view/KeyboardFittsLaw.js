@@ -101,7 +101,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardQ',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'q'
                             },
                             {
@@ -109,7 +109,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardW',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 47,
                                 text: 'w'
                             },
                             {
@@ -117,7 +117,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardE',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 'e'
                             },
                             {
@@ -125,7 +125,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardR',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 54,
                                 text: 'r'
                             },
                             {
@@ -133,7 +133,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardT',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 't'
                             }
                         ]
@@ -141,6 +141,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                     {
                         xtype: 'panel',
                         itemId: 'asdfgPanel',
+                        margin: '0 0 0 25',
                         layout: {
                             type: 'hbox'
                         },
@@ -150,7 +151,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardA',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 'a'
                             },
                             {
@@ -158,7 +159,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardS',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 54,
                                 text: 's'
                             },
                             {
@@ -166,7 +167,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardD',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 54,
                                 text: 'd'
                             },
                             {
@@ -174,7 +175,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardF',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 47,
                                 text: 'f'
                             },
                             {
@@ -182,7 +183,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardG',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 47,
                                 text: 'g'
                             }
                         ]
@@ -207,7 +208,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardZ',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'z'
                             },
                             {
@@ -215,7 +216,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardX',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'x'
                             },
                             {
@@ -223,7 +224,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardC',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 54,
                                 text: 'c'
                             },
                             {
@@ -231,7 +232,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardV',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'v'
                             }
                         ]
@@ -338,7 +339,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardY',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 47,
                                 text: 'y'
                             },
                             {
@@ -346,7 +347,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardU',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 47,
                                 text: 'u'
                             },
                             {
@@ -354,7 +355,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardI',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 'i'
                             },
                             {
@@ -362,7 +363,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardO',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 'o'
                             },
                             {
@@ -370,7 +371,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardP',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 47,
                                 text: 'p'
                             }
                         ]
@@ -379,6 +380,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                         xtype: 'panel',
                         id: '',
                         itemId: 'hjklPanel',
+                        margin: '0 25 0 0',
                         layout: {
                             align: 'end',
                             pack: 'end',
@@ -390,7 +392,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardH',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 54,
                                 text: 'h'
                             },
                             {
@@ -398,7 +400,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardJ',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'j'
                             },
                             {
@@ -406,7 +408,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardK',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'k'
                             },
                             {
@@ -414,7 +416,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardL',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 54,
                                 text: 'l'
                             }
                         ]
@@ -434,7 +436,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardB',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 35,
+                                minWidth: 40,
                                 text: 'b'
                             },
                             {
@@ -442,7 +444,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardN',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 63,
+                                minWidth: 60,
                                 text: 'n'
                             },
                             {
@@ -450,7 +452,7 @@ Ext.define('MyApp.view.KeyboardFittsLaw', {
                                 itemId: 'keyboardM',
                                 margin: 2,
                                 minHeight: 39,
-                                minWidth: 50,
+                                minWidth: 47,
                                 text: 'm'
                             },
                             {

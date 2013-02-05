@@ -54,11 +54,11 @@ Ext.define('MyApp.view.RootPanel', {
                 // Bye
             }, this);
 
-            //return;
+            return;
         }
 
         // Prüfe Auflösung
-        var minsize = [1000, 500];
+        var minsize = [960, 440];
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
         var isValidSize = (minsize[0] <= width && minsize[1] <= height);
@@ -67,7 +67,7 @@ Ext.define('MyApp.view.RootPanel', {
                 // Bye
             }, this);
 
-            //return;
+            return;
         }
 
         if(facebook.userId == 0){
@@ -133,7 +133,7 @@ Ext.define('MyApp.view.RootPanel', {
 
 
             Ext.Msg.alert('Let\'s start!', 'ready?', function(){
-                task.delay(600);
+                task.delay(60000);
                 testpanel.startTest();
             }, this);     
         };
