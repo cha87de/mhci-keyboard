@@ -45,6 +45,31 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     onPanelShow: function(component, options) {
+        // Prüfe OS
+        var validOs = ["iOS","iPad","iPhone","iPod","Android"];
+        var osName = Ext.os.name;
+        var isValidOs = (validOs.indexOf(osName) != -1);
+        if(!isValidOs){
+            Ext.Msg.alert('Device not valid', 'Sorry, you need a tablet with iOS or Android!', function(){
+                // Bye
+            }, this);
+
+            //return;
+        }
+
+        // Prüfe Auflösung
+        var minsize = [1000, 500];
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
+        var isValidSize = (minsize[0] <= width && minsize[1] <= height);
+        if(!isValidSize){
+            Ext.Msg.alert('Screen too small', 'Sorry, you need a tablet with a larger screen!', function(){
+                // Bye
+            }, this);
+
+            //return;
+        }
+
         if(facebook.userId == 0){
             // show Login-Window
             Ext.Msg.alert('', 'Welcome!<br/>Continue to facebook login?', function(){
@@ -108,7 +133,7 @@ Ext.define('MyApp.view.RootPanel', {
 
 
             Ext.Msg.alert('Let\'s start!', 'ready?', function(){
-                task.delay(60000);
+                task.delay(600);
                 testpanel.startTest();
             }, this);     
         };
@@ -191,6 +216,8 @@ Ext.define('MyApp.view.RootPanel', {
     },
 
     uploadData: function(callback, scope) {
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        var height = (window.innerHeight > 0) ? window.innerHeight : screen.height;
 
         Ext.Ajax.request({
             url: 'upload.php',
@@ -211,7 +238,9 @@ Ext.define('MyApp.view.RootPanel', {
                 test22Errors: this.testresults[4]['errors'],
 
                 test23Characters: this.testresults[5]['characters'],
-                test23Errors: this.testresults[5]['errors']
+                test23Errors: this.testresults[5]['errors'],
+
+                screenresolution: width + 'x' + height
             },
             success: callback,
             scope: scope

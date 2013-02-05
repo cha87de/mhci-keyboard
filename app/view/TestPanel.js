@@ -163,9 +163,14 @@ Ext.define('MyApp.view.TestPanel', {
     },
 
     counter: function(word) {
-        // ToDo: ist word an aktueller Stelle richtig?
-        // ToDo: abhängig davon rot oder grün einfärben.
-        var phrase1 = this.phrase1.replace(/<\/?[^>]+(>|$)/g, "");
+        var phrase1 = this.phrase1;
+
+        // entferne formatierungs-html-code aus satz
+        var removeItems = ['<i>', '</i>', '<span>', '</span>'];
+        for(var i = 0; i< removeItems.length; i++){
+            phrase1 = phrase1.replace(/removeItems[i]/, '');
+        }
+
         var words = phrase1.split(" ");
         var phraseWord = words[this.currentWord];
         // Prüfen word == phraseWord

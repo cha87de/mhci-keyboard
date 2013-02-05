@@ -27,6 +27,8 @@ try {
         ":test22Errors" => $_REQUEST["test22Errors"],
         ":test23Characters" => $_REQUEST["test23Characters"],
         ":test23Errors" => $_REQUEST["test23Errors"],
+        ":useragent" => $_SERVER["HTTP_USER_AGENT"],
+        ":screenresolution" => $_REQUEST["screenresolution"]
     );
     $queryStatement = "UPDATE user SET
     testdone = 1,
@@ -48,7 +50,10 @@ try {
     test22Errors = :test22Errors,
 
     test23Characters = :test23Characters,
-    test23Errors = :test23Errors
+    test23Errors = :test23Errors,
+    
+    useragent = :useragent,
+    screenresolution = :screenresolution
 
     WHERE `fbId` = :fbId;";
     $query = $pdo->prepare($queryStatement);
